@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpha Unit | Risk Check</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Alpha Unit</span>
+      <span class="badge">Risk Check</span>
+    </div>
+
+    <div class="header-tools">
+      <div class="a11y-bar">
+        <button class="a11y-btn size-btn" id="btnDec" type="button" title="Decrease font size">A−</button>
+        <button class="a11y-btn size-btn" id="btnInc" type="button" title="Increase font size">A+</button>
+        <div class="a11y-separator"></div>
+        <button class="a11y-btn theme-btn" id="btnHC" type="button" title="Toggle high contrast mode">☀️</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="spot.html">Spot</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a class="active" href="risk.html">Risk Check</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Risk Check Tool</h1>
+    <p>
+      Answer questions about your current cyber practices. We'll assess your risk level
+      and provide personalized, actionable recommendations to improve your security posture.
+    </p>
+  </section>
+
+  <hr class="sep" />
+
+  <!-- Risk Assessment Info -->
+  <section class="grid" style="margin-bottom: 40px;">
+    <div class="card">
+      <h4 style="color: var(--accent); margin-top: 0;">📋 Comprehensive Assessment</h4>
+      <p style="margin: 10px 0; color: var(--muted);">25 questions covering all major security areas</p>
+    </div>
+    <div class="card">
+      <h4 style="color: var(--accent); margin-top: 0;">🎯 Personalized Results</h4>
+      <p style="margin: 10px 0; color: var(--muted);">Get tailored recommendations based on your responses</p>
+    </div>
+    <div class="card">
+      <h4 style="color: var(--accent); margin-top: 0;">🔒 Completely Private</h4>
+      <p style="margin: 10px 0; color: var(--muted);">No data is saved or transmitted anywhere</p>
+    </div>
+  </section>
+
+  <section class="card" style="background: rgba(102, 227, 255, 0.08); border-left: 4px solid var(--accent); margin-bottom: 40px;">
+    <h3 style="margin-top: 0;">How This Assessment Works</h3>
+    <ol style="color: var(--text); line-height: 1.8; margin: 15px 0;">
+      <li><strong>Answer Honestly:</strong> Check each box that applies to your current practices</li>
+      <li><strong>Get Results:</strong> We calculate your risk score based on security best practices</li>
+      <li><strong>Get Guidance:</strong> Receive detailed recommendations tailored to your risk areas</li>
+      <li><strong>Take Action:</strong> Use the recommendations to improve your security</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>Security Assessment Questionnaire</h3>
+    
+    <!-- Passwords & Authentication Section -->
+    <div style="margin: 30px 0; padding: 20px; background: rgba(155, 255, 178, 0.05); border-radius: 8px; border-left: 3px solid var(--accent2);">
+      <h4 style="margin-top: 0; color: var(--accent2);">🔐 Passwords & Authentication</h4>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check1" class="risk-check" />
+        <span style="margin-left:8px;">I use the same password across multiple accounts</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check2" class="risk-check" />
+        <span style="margin-left:8px;">I have not enabled MFA (2-factor authentication) on critical accounts</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check3" class="risk-check" />
+        <span style="margin-left:8px;">I write down my passwords or use browser password save feature</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check4" class="risk-check" />
+        <span style="margin-left:8px;">My passwords are short (less than 10 characters)</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check5" class="risk-check" />
+        <span style="margin-left:8px;">I haven't changed my passwords in over a year</span>
+      </label>
+    </div>
+
+    <!-- Email & Phishing Section -->
+    <div style="margin: 30px 0; padding: 20px; background: rgba(102, 227, 255, 0.05); border-radius: 8px; border-left: 3px solid var(--accent);">
+      <h4 style="margin-top: 0; color: var(--accent);">📧 Email & Phishing</h4>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check6" class="risk-check" />
+        <span style="margin-left:8px;">I click links in emails from unknown or untrusted senders</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check7" class="risk-check" />
+        <span style="margin-left:8px;">I open unexpected email attachments without verifying the sender</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check8" class="risk-check" />
+        <span style="margin-left:8px;">I don't check email sender addresses carefully</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check9" class="risk-check" />
+        <span style="margin-left:8px;">I don't have an email spam filter enabled</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check10" class="risk-check" />
+        <span style="margin-left:8px;">I've responded to emails asking for my personal information</span>
+      </label>
+    </div>
+
+    <!-- Device & Software Section -->
+    <div style="margin: 30px 0; padding: 20px; background: rgba(255, 193, 7, 0.05); border-radius: 8px; border-left: 3px solid #ffc107;">
+      <h4 style="margin-top: 0; color: #ffc107;">💻 Devices & Software</h4>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check11" class="risk-check" />
+        <span style="margin-left:8px;">I rarely update my device operating system</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check12" class="risk-check" />
+        <span style="margin-left:8px;">My apps and browser extensions are outdated</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check13" class="risk-check" />
+        <span style="margin-left:8px;">I don't use antivirus or security software</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check14" class="risk-check" />
+        <span style="margin-left:8px;">I don't have a firewall enabled</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check15" class="risk-check" />
+        <span style="margin-left:8px;">I use unsecured or cracked software/downloads</span>
+      </label>
+    </div>
+
+    <!-- Network & Access Section -->
+    <div style="margin: 30px 0; padding: 20px; background: rgba(244, 67, 54, 0.05); border-radius: 8px; border-left: 3px solid #f44336;">
+      <h4 style="margin-top: 0; color: #f44336;">🌐 Network & Access</h4>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check16" class="risk-check" />
+        <span style="margin-left:8px;">I share personal information over unsecured public Wi-Fi</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check17" class="risk-check" />
+        <span style="margin-left:8px;">I don't use a VPN on public networks</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check18" class="risk-check" />
+        <span style="margin-left:8px;">I connect to public Wi-Fi networks without knowing their source</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check19" class="risk-check" />
+        <span style="margin-left:8px;">I don't secure my router with a strong password</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check20" class="risk-check" />
+        <span style="margin-left:8px;">Bluetooth/location services are always enabled on my phone</span>
+      </label>
+    </div>
+
+    <!-- Data & Backup Section -->
+    <div style="margin: 30px 0; padding: 20px; background: rgba(156, 39, 176, 0.05); border-radius: 8px; border-left: 3px solid #9c27b0;">
+      <h4 style="margin-top: 0; color: #9c27b0;">💾 Data & Backup</h4>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check21" class="risk-check" />
+        <span style="margin-left:8px;">I have not backed up my important files recently</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check22" class="risk-check" />
+        <span style="margin-left:8px;">My backups are stored on the same device as my data</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check23" class="risk-check" />
+        <span style="margin-left:8px;">I don't have any backup system (cloud or physical)</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check24" class="risk-check" />
+        <span style="margin-left:8px;">I store sensitive personal information without encryption</span>
+      </label>
+      <label style="display:block;margin:15px 0;">
+        <input type="checkbox" id="check25" class="risk-check" />
+        <span style="margin-left:8px;">I haven't tested whether my backups can be restored</span>
+      </label>
+    </div>
+
+    <button class="btn primary" id="assessBtn" style="margin-top: 30px; font-size: 16px; padding: 12px 30px;">Check My Risk Level</button>
+  </section>
+
+  <div id="riskResult" style="display:none;">
+    <hr class="sep" />
+    <div class="card" style="background: rgba(102, 227, 255, 0.05); border: 2px solid var(--accent);">
+      <h3 style="margin-top: 0;">📊 Your Risk Assessment Results</h3>
+      <div id="riskLevel" style="font-size:1.8em; margin:25px 0; padding:20px; border-radius:8px; text-align:center; font-weight: bold;"></div>
+      
+      <div id="riskRecommendations"></div>
+      
+      <div style="margin-top: 30px; padding: 20px; background: rgba(155, 255, 178, 0.1); border-radius: 8px; border-left: 4px solid var(--accent2);">
+        <h4 style="margin-top: 0; color: var(--accent2);">✅ Next Steps</h4>
+        <p style="color: var(--muted); margin: 10px 0;">
+          Visit the <a href="learn.html" style="color: var(--accent);">Learn page</a> for detailed information on how to implement these recommendations, 
+          or check the <a href="tools.html" style="color: var(--accent);">Tools page</a> for recommended security products.
+        </p>
+      </div>
+      
+      <button class="btn primary" id="resetBtn" style="margin-top:25px;">Take Assessment Again</button>
+    </div>
+  </div>
+
+  <div class="notice" style="background: rgba(102, 227, 255, 0.1); border-left: 4px solid var(--accent); padding: 20px; border-radius: 8px; margin: 40px 0;">
+    <p style="margin: 0; font-size: 16px;"><strong>🔒 Your Privacy:</strong> This assessment is completely confidential. No data is saved, stored, or transmitted. It runs entirely in your browser.</p>
+  </div>
+
+  <div id="riskResult" style="display:none;">
+    <hr class="sep" />
+    <div class="card">
+      <h3>Your Risk Assessment</h3>
+      <div id="riskLevel" style="font-size:1.5em;margin:20px 0;padding:15px;border-radius:8px;text-align:center;"></div>
+      <div id="riskRecommendations"></div>
+      <button class="btn" id="resetBtn" style="margin-top:20px;">Take Assessment Again</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <hr class="sep" />
+    Alpha Unit – Cyber Security Awareness. No personal data is collected.
+  </div>
+</main>
+
+<!-- Goat Assistant AI -->
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<div class="goat-panel" id="goatPanel" aria-live="polite">
+  <div class="goat-head">
+    <strong>🐐 Goat Assistant AI</strong>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+  </div>
+  <div class="goat-chat" id="goatChat"></div>
+  <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
+</div>
+
+<script>
+document.getElementById('assessBtn').addEventListener('click', function() {
+  const checks = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const total = document.querySelectorAll('input[type="checkbox"]').length;
+  const riskScore = (checks / total) * 100;
+
+  // Categorize risk level
+  let level, color, emoji, message;
+  if (riskScore === 0) {
+    level = '✅ LOW RISK';
+    color = 'var(--accent2)';
+    emoji = '🟢';
+    message = 'Excellent! You\'re following solid cyber security practices. Keep up this great work and stay informed about new threats.';
+  } else if (riskScore <= 20) {
+    level = '🟡 LOW-MODERATE RISK';
+    color = '#90EE90';
+    emoji = '🟡';
+    message = 'You\'re doing very well overall. Address the few vulnerabilities identified to further strengthen your defenses.';
+  } else if (riskScore <= 40) {
+    level = '🟠 MODERATE RISK';
+    color = '#ffa500';
+    emoji = '🟠';
+    message = 'You\'re doing reasonably well, but there are several areas where you can significantly improve your security.';
+  } else if (riskScore <= 60) {
+    level = '🔴 HIGH RISK';
+    color = '#ff7f50';
+    emoji = '🔴';
+    message = 'You have multiple vulnerabilities that need attention. Review all recommendations below carefully and implement them systematically.';
+  } else if (riskScore <= 80) {
+    level = '⛔ VERY HIGH RISK';
+    color = 'var(--danger)';
+    emoji = '⛔';
+    message = 'Your security practices need immediate improvement. Start with the top priority recommendations and work your way down the list.';
+  } else {
+    level = '🚨 CRITICAL RISK';
+    color = '#8B0000';
+    emoji = '🚨';
+    message = 'Your digital safety is significantly at risk. Take action immediately on the top recommendations. Consider getting help from a security professional.';
+  }
+
+  const riskLevelDiv = document.getElementById('riskLevel');
+  riskLevelDiv.innerHTML = `<span style="color:${color};">${level}</span><br><small style="color: var(--muted); font-weight: normal;">(${checks}/${total} risk factors detected - ${Math.round(riskScore)}%)</small>`;
+  riskLevelDiv.style.borderLeft = `4px solid ${color}`;
+  riskLevelDiv.style.background = `rgba(102, 227, 255, 0.1)`;
+
+  // Generate recommendations based on categories
+  const categoryRecommendations = {
+    passwords: [
+      '<strong>Use a Password Manager:</strong> Bitwarden, 1Password, or KeePass securely store and generate unique passwords. Most offer free or affordable plans.',
+      '<strong>Enable MFA on Critical Accounts:</strong> Start with email, banking, and social media. Use authenticator apps (Google Authenticator, Authy) when available—they\'re more secure than SMS.',
+      '<strong>Create Strong Passphrases:</strong> Use 12+ characters mixing upper/lowercase, numbers, and symbols. "BlueMoon#Sunshine47!Cat" is stronger than "Password123".',
+      '<strong>Never Reuse Passwords:</strong> If one site is breached, attackers try that password everywhere. A password manager makes unique passwords easy.'
+    ],
+    email: [
+      '<strong>Verify Sender Address:</strong> Hover over links and check email addresses carefully. Attackers use similar domains (paypa1.com vs paypal.com).',
+      '<strong>Don\'t Click Suspicious Links:</strong> Go directly to official websites instead of clicking email links. When in doubt, contact the company directly.',
+      '<strong>Be Cautious with Attachments:</strong> Don\'t open unexpected attachments. Verify the sender using another contact method first.',
+      '<strong>Enable Email Filtering:</strong> Turn on spam filters and set up rules to catch phishing attempts. Report suspicious emails to your provider.'
+    ],
+    device: [
+      '<strong>Enable Automatic Updates:</strong> Turn on automatic updates for your OS, browser, and apps. Security patches close known vulnerabilities attackers exploit.',
+      '<strong>Use Antivirus Software:</strong> Windows Defender (Windows) or macOS built-in protection are good starts. Consider premium options like Norton or Kaspersky.',
+      '<strong>Keep Software Current:</strong> Uninstall apps you don\'t use and update the rest regularly. Remove outdated plugins like Flash.',
+      '<strong>Enable Firewall:</strong> Make sure your device firewall is turned on. This blocks unauthorized access attempts.'
+    ],
+    network: [
+      '<strong>Use a VPN on Public Wi-Fi:</strong> ExpressVPN, ProtonVPN, or NordVPN encrypt your connection. Never access banking or sensitive accounts on unsecured networks.',
+      '<strong>Avoid Public Wi-Fi for Sensitive Tasks:</strong> Use your mobile hotspot for banking, email, or personal accounts instead.',
+      '<strong>Secure Your Home Router:</strong> Change default password, enable WPA3 encryption, and disable WPS. This prevents unauthorized access to your network.',
+      '<strong>Disable Unnecessary Services:</strong> Turn off Bluetooth and location services when not in use. They can be exploited by nearby attackers.'
+    ],
+    backup: [
+      '<strong>Create Regular Backups:</strong> Use cloud storage (Google Drive, iCloud, OneDrive) and external drives. Keep at least one offline backup.',
+      '<strong>Follow the 3-2-1 Rule:</strong> Keep 3 copies of important data, on 2 different types of media, with 1 copy offline.',
+      '<strong>Test Your Backups:</strong> Periodically verify that backups can be restored. A backup that can\'t be restored is useless.',
+      '<strong>Encrypt Sensitive Data:</strong> Use encryption tools like BitLocker (Windows) or FileVault (Mac) to protect sensitive information even if accessed.'
+    ]
+  };
+
+  // Determine which recommendations to show based on checked items
+  const recommendations = [];
+  
+  if (document.getElementById('check1').checked || document.getElementById('check2').checked || 
+      document.getElementById('check3').checked || document.getElementById('check4').checked || 
+      document.getElementById('check5').checked) {
+    recommendations.push(...categoryRecommendations.passwords);
+  }
+  
+  if (document.getElementById('check6').checked || document.getElementById('check7').checked || 
+      document.getElementById('check8').checked || document.getElementById('check9').checked || 
+      document.getElementById('check10').checked) {
+    recommendations.push(...categoryRecommendations.email);
+  }
+  
+  if (document.getElementById('check11').checked || document.getElementById('check12').checked || 
+      document.getElementById('check13').checked || document.getElementById('check14').checked || 
+      document.getElementById('check15').checked) {
+    recommendations.push(...categoryRecommendations.device);
+  }
+  
+  if (document.getElementById('check16').checked || document.getElementById('check17').checked || 
+      document.getElementById('check18').checked || document.getElementById('check19').checked || 
+      document.getElementById('check20').checked) {
+    recommendations.push(...categoryRecommendations.network);
+  }
+  
+  if (document.getElementById('check21').checked || document.getElementById('check22').checked || 
+      document.getElementById('check23').checked || document.getElementById('check24').checked || 
+      document.getElementById('check25').checked) {
+    recommendations.push(...categoryRecommendations.backup);
+  }
+
+  let recommendationHTML = `
+    <h4 style="margin-top:25px; color: var(--accent);">🎯 Priority Actions for You:</h4>
+    <p style="color: var(--muted); margin-bottom: 20px;">${message}</p>
+  `;
+
+  // Show top recommendations
+  const uniqueRecommendations = [...new Set(recommendations)];
+  const topRecommendations = uniqueRecommendations.slice(0, 8);
+  
+  recommendationHTML += '<ol class="list" style="margin: 15px 0;">';
+  topRecommendations.forEach((rec, index) => {
+    recommendationHTML += `<li>${rec}</li>`;
+  });
+  recommendationHTML += '</ol>';
+
+  if (uniqueRecommendations.length > 8) {
+    recommendationHTML += `<p style="color: var(--muted); font-size: 14px;"><em>...and ${uniqueRecommendations.length - 8} more recommendations. Review all areas above.</em></p>`;
+  }
+
+  document.getElementById('riskRecommendations').innerHTML = recommendationHTML;
+  document.querySelector('.card').style.display = 'none';
+  document.getElementById('riskResult').style.display = 'block';
+  window.scrollTo(0, document.getElementById('riskResult').offsetTop - 100);
+});
+
+document.getElementById('resetBtn').addEventListener('click', function() {
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+  document.getElementById('riskResult').style.display = 'none';
+  document.querySelector('.card').style.display = 'block';
+  window.scrollTo(0, 0);
+});
+</script>
+
+<script src="js/accessibility.js/accessibility.js"></script>
+<script src="js/search.js/search.js"></script>
+<script src="js/assistant.js/assistant.js"></script>
+
+</body>
+</html>
+
+
+

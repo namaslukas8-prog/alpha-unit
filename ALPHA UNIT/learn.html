@@ -1,0 +1,440 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpha Unit | Learn</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Alpha Unit</span>
+      <span class="badge">Learn</span>
+    </div>
+
+    <div class="header-tools">
+      <div class="a11y-bar">
+        <button class="a11y-btn size-btn" id="btnDec" type="button" title="Decrease font size">A−</button>
+        <button class="a11y-btn size-btn" id="btnInc" type="button" title="Increase font size">A+</button>
+        <div class="a11y-separator"></div>
+        <button class="a11y-btn theme-btn" id="btnHC" type="button" title="Toggle high contrast mode">☀️</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="learn.html">Learn</a></li>
+          <li><a href="spot.html">Spot</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="risk.html">Risk Check</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Learn Cyber Safety Topics</h1>
+    <p>Expand any topic below to learn practical security tips and best practices.</p>
+  </section>
+
+  <section id="topics" class="card-list">
+    <!-- Phishing -->
+    <button class="dropdown-btn" onclick="toggleDropdown(event)">
+      <span>Phishing & Email Security</span>
+    </button>
+    <div class="dropdown-content">
+      <p>Phishing is when attackers trick you into clicking a link, opening an attachment, or sharing personal information by impersonating legitimate organizations.</p>
+      
+      <h4>Common Phishing Signs:</h4>
+      <ul>
+        <li>Sender address doesn't match the organization's real domain</li>
+        <li>Urgency: "Act now!", "Verify immediately", "Account suspended"</li>
+        <li>Requests for passwords, credit cards, or personal information</li>
+        <li>Generic greetings: "Dear Customer" instead of your name</li>
+        <li>Suspicious links or attachments</li>
+        <li>Spelling and grammar errors</li>
+        <li>Too good to be true offers or threats</li>
+      </ul>
+
+      <h4>How to Stay Safe:</h4>
+      <ul>
+        <li>Never click links in unexpected emails—go directly to the official website</li>
+        <li>Hover over links to preview the actual destination</li>
+        <li>Check the sender's email address carefully (attackers use similar domains: "paypa1.com" instead of "paypal.com")</li>
+        <li>Enable two-factor authentication on important accounts</li>
+        <li>Use email filters and spam detection tools</li>
+        <li>Report suspicious emails to your organization or the real company</li>
+        <li>Be cautious with file attachments—even from known contacts</li>
+        <li>Verify requests through another communication channel (call the company directly)</li>
+      </ul>
+
+      <h4>What to Do if You Fall for Phishing:</h4>
+      <ul>
+        <li>Change your password immediately if you entered it</li>
+        <li>Enable two-factor authentication</li>
+        <li>Monitor your account for suspicious activity</li>
+        <li>Report it to the real organization and your email provider</li>
+        <li>Consider identity theft monitoring services</li>
+      </ul>
+    </div>
+
+    <!-- Passwords -->
+    <button class="dropdown-btn" onclick="toggleDropdown(event)">
+      <span>Strong Passwords & Password Managers</span>
+    </button>
+    <div class="dropdown-content">
+      <p>Your password is often the only thing standing between your account and an attacker. Weak passwords are one of the most common entry points for hackers.</p>
+      
+      <h4>What Makes a Strong Password:</h4>
+      <ul>
+        <li>At least 12–16 characters long (longer is better)</li>
+        <li>Mix of uppercase, lowercase, numbers, and symbols</li>
+        <li>No personal information (birthdate, pet name, address)</li>
+        <li>No dictionary words or common patterns (password123)</li>
+        <li>Unique for each account</li>
+        <li>Not reused across multiple websites</li>
+      </ul>
+
+      <h4>Why Reusing Passwords is Dangerous:</h4>
+      <ul>
+        <li>If one website is breached, attackers try that password everywhere</li>
+        <li>Criminals use leaked password lists for "credential stuffing" attacks</li>
+        <li>One weak site can compromise all your accounts</li>
+      </ul>
+
+      <h4>Password Manager Benefits:</h4>
+      <ul>
+        <li>Securely stores all your passwords in encrypted vaults</li>
+        <li>Generates random, strong passwords automatically</li>
+        <li>Fills passwords automatically (saves time and reduces typos)</li>
+        <li>Protects against phishing by only filling passwords on legitimate sites</li>
+        <li>Syncs across devices</li>
+      </ul>
+
+      <h4>Recommended Password Managers:</h4>
+      <ul>
+        <li>Bitwarden (open-source, affordable)</li>
+        <li>1Password (user-friendly, strong security)</li>
+        <li>KeePass (offline, fully private)</li>
+        <li>LastPass (popular, many integrations)</li>
+      </ul>
+
+      <h4>Password Best Practices:</h4>
+      <ul>
+        <li>Create a unique, strong password for each important account</li>
+        <li>Use passphrases (4+ random words) for better memorability</li>
+        <li>Never share passwords via email or text</li>
+        <li>Don't save passwords in browsers (unless using a password manager)</li>
+        <li>Change passwords if you suspect a breach</li>
+        <li>Use a password manager to track all your accounts</li>
+      </ul>
+    </div>
+
+    <!-- MFA -->
+    <button class="dropdown-btn" onclick="toggleDropdown(event)">
+      <span>Multi-Factor Authentication (MFA)</span>
+    </button>
+    <div class="dropdown-content">
+      <p>Multi-factor authentication adds a second (or more) verification step beyond your password. Even if someone has your password, they can't access your account without the second factor.</p>
+      
+      <h4>Types of MFA:</h4>
+      <ul>
+        <li><strong>Authenticator Apps</strong> (Best): Generate time-based codes—Google Authenticator, Microsoft Authenticator, Authy</li>
+        <li><strong>SMS Text Messages</strong>: Codes sent via text (convenient but less secure)</li>
+        <li><strong>Email Codes</strong>: Similar to SMS but sent via email</li>
+        <li><strong>Biometric</strong> (Fingerprint/Face): Some apps support facial recognition or fingerprint</li>
+        <li><strong>Hardware Keys</strong> (Most Secure): USB devices like YubiKey—impossible to phish</li>
+        <li><strong>Push Notifications</strong>: Approve login from another trusted device</li>
+      </ul>
+
+      <h4>Why Authenticator Apps are Better Than SMS:</h4>
+      <ul>
+        <li>SMS can be intercepted or rerouted (SIM swapping attacks)</li>
+        <li>Authenticator apps generate codes offline—can't be intercepted</li>
+        <li>SMS requires phone signal; apps work anytime</li>
+      </ul>
+
+      <h4>MFA Setup Steps:</h4>
+      <ul>
+        <li>Go to account settings in your online account</li>
+        <li>Find "Security" or "Two-Factor Authentication"</li>
+        <li>Download an authenticator app (Google Authenticator or Authy)</li>
+        <li>Scan the QR code in the app</li>
+        <li>Save backup codes in a secure location</li>
+        <li>Enable MFA and test it</li>
+      </ul>
+
+      <h4>Protect Your Backup Codes:</h4>
+      <ul>
+        <li>Save them in a password manager or secure location</li>
+        <li>Never share them via email or text</li>
+        <li>Store them offline if possible</li>
+        <li>Generate new codes if you suspect they've been compromised</li>
+      </ul>
+
+      <h4>Enable MFA On These Accounts First:</h4>
+      <ul>
+        <li>Email (most important—controls password resets)</li>
+        <li>Banking and financial accounts</li>
+        <li>Social media accounts</li>
+        <li>Work/professional accounts</li>
+        <li>Cloud storage (Google Drive, OneDrive, iCloud)</li>
+      </ul>
+    </div>
+
+    <!-- Social Engineering -->
+    <button class="dropdown-btn" onclick="toggleDropdown(event)">
+      <span>Social Engineering & Scams</span>
+    </button>
+    <div class="dropdown-content">
+      <p>Social engineering is when attackers manipulate you psychologically to divulge information or take actions that compromise your security.</p>
+      
+      <h4>Common Social Engineering Tactics:</h4>
+      <ul>
+        <li><strong>Impersonation</strong>: Pretending to be from your bank, IT support, tax agency</li>
+        <li><strong>Urgency</strong>: "Your account will be closed!", "Act immediately!"</li>
+        <li><strong>Authority</strong>: Claiming to represent official organizations</li>
+        <li><strong>Trust Building</strong>: Building rapport before asking for sensitive info</li>
+        <li><strong>Fear</strong>: Threats of account closure or legal action</li>
+        <li><strong>Reward</strong>: Offering prizes, refunds, or deals</li>
+      </ul>
+
+      <h4>Common Scams by Type:</h4>
+      <ul>
+        <li><strong>Tech Support Scams</strong>: Pop-ups claiming your device has viruses</li>
+        <li><strong>Prize/Lottery Scams</strong>: "You've won!" (but didn't enter)</li>
+        <li><strong>Romance Scams</strong>: Building emotional connection then asking for money</li>
+        <li><strong>Loan Scams</strong>: Guaranteed loans with upfront fees</li>
+        <li><strong>Job Scams</strong>: Work-from-home jobs that ask for upfront payment</li>
+        <li><strong>IRS/Tax Scams</strong>: Threatening legal action over taxes</li>
+        <li><strong>Package/Delivery Scams</strong>: Fake shipping notifications with malicious links</li>
+      </ul>
+
+      <h4>How to Protect Yourself:</h4>
+      <ul>
+        <li>Never give personal information to unsolicited callers (hang up and call the official number)</li>
+        <li>Verify requests through another channel (if "bank" calls, call them back at the number on your card)</li>
+        <li>Be suspicious of urgency and threats</li>
+        <li>Real companies never ask for passwords via email or phone</li>
+        <li>Legitimate organizations won't ask you to buy gift cards for payments</li>
+        <li>Check for spelling/grammar errors in emails</li>
+        <li>Use your instincts—if something feels off, it probably is</li>
+        <li>Take time to think before responding (scammers pressure you to act fast)</li>
+      </ul>
+
+      <h4>If You Fall for a Scam:</h4>
+      <ul>
+        <li>Stop all contact with the scammer immediately</li>
+        <li>Report it to the FTC (ftc.gov), FBI, or local police</li>
+        <li>Report it to your bank if money was transferred</li>
+        <li>Monitor your accounts for unauthorized activity</li>
+        <li>Consider placing a fraud alert with credit bureaus</li>
+      </ul>
+    </div>
+
+    <!-- Public Wi-Fi Safety -->
+    <button class="dropdown-btn" onclick="toggleDropdown(event)">
+      <span>Public Wi-Fi Safety</span>
+    </button>
+    <div class="dropdown-content">
+      <p>Public Wi-Fi at cafes, airports, and hotels is convenient but risky. Attackers can easily intercept unencrypted data and create fake networks.</p>
+      
+      <h4>Risks of Public Wi-Fi:</h4>
+      <ul>
+        <li>Unencrypted traffic can be intercepted (passwords, credit cards)</li>
+        <li>Attackers can create fake networks ("Evil Twin" networks)</li>
+        <li>Man-in-the-middle attacks intercept communication</li>
+        <li>Malware distribution through compromised networks</li>
+        <li>Cookie theft (attackers hijack your login sessions)</li>
+      </ul>
+
+      <h4>What NOT to Do on Public Wi-Fi:</h4>
+      <ul>
+        <li>Don't access banking or financial accounts</li>
+        <li>Don't enter credit card information</li>
+        <li>Don't change passwords</li>
+        <li>Don't access sensitive work files</li>
+        <li>Don't make purchases on untrusted sites</li>
+      </ul>
+
+      <h4>How to Stay Safe on Public Wi-Fi:</h4>
+      <ul>
+        <li>Use a VPN (Virtual Private Network) to encrypt all traffic</li>
+        <li>Only visit HTTPS websites (padlock icon in browser)</li>
+        <li>Disable auto-connect and file sharing on your device</li>
+        <li>Turn off Bluetooth when not in use</li>
+        <li>Verify the network name with café staff (avoid unnamed networks)</li>
+        <li>Use mobile hotspot instead (tether from your phone)</li>
+        <li>Avoid accessing sensitive accounts (email, banking)</li>
+        <li>Use two-factor authentication on all important accounts</li>
+        <li>Keep your firewall enabled</li>
+      </ul>
+
+      <h4>Best VPN Services:</h4>
+      <ul>
+        <li>ExpressVPN (fast, reliable, no-log policy)</li>
+        <li>ProtonVPN (privacy-focused, free option available)</li>
+        <li>NordVPN (strong encryption, good interface)</li>
+        <li>Mullvad (extremely privacy-conscious)</li>
+      </ul>
+    </div>
+
+    <!-- Software Updates -->
+    <button class="dropdown-btn" onclick="toggleDropdown(event)">
+      <span>Software Updates & Security Patches</span>
+    </button>
+    <div class="dropdown-content">
+      <p>Software updates patch security vulnerabilities that attackers actively exploit. Delaying updates leaves you vulnerable to known attacks.</p>
+      
+      <h4>What Updates Do:</h4>
+      <ul>
+        <li>Patch security vulnerabilities and exploits</li>
+        <li>Fix bugs that could lead to crashes or data loss</li>
+        <li>Improve performance and add new features</li>
+        <li>Remove outdated protocols attackers can exploit</li>
+        <li>Strengthen compatibility with secure services</li>
+      </ul>
+
+      <h4>What Needs Regular Updates:</h4>
+      <ul>
+        <li><strong>Operating Systems</strong>: Windows, macOS, Linux, iOS, Android</li>
+        <li><strong>Web Browsers</strong>: Chrome, Firefox, Safari, Edge</li>
+        <li><strong>Applications</strong>: Office software, media players, PDF readers</li>
+        <li><strong>Plugins</strong>: Java, Flash (if still used), media codecs</li>
+        <li><strong>Firmware</strong>: Router, printers, security cameras</li>
+      </ul>
+
+      <h4>How to Stay Updated:</h4>
+      <ul>
+        <li>Enable automatic updates for your OS and browsers</li>
+        <li>Set updates to install during off-hours (avoid disruption)</li>
+        <li>Restart your devices regularly (some updates require restart)</li>
+        <li>Check for app updates weekly in your app store</li>
+        <li>Remove old software you no longer use (less to update)</li>
+        <li>Don't delay critical security updates</li>
+        <li>Uninstall outdated plugins like Flash</li>
+      </ul>
+
+      <h4>Important Security Updates to Prioritize:</h4>
+      <ul>
+        <li>Operating system patches (especially critical and important)</li>
+        <li>Browser updates (daily exposure to threats)</li>
+        <li>Java and Flash (high-value targets)</li>
+        <li>Antivirus/security software definitions</li>
+        <li>Email client updates</li>
+      </ul>
+    </div>
+
+    <!-- Malware & Antivirus -->
+    <button class="dropdown-btn" onclick="toggleDropdown(event)">
+      <span>Malware Protection & Antivirus</span>
+    </button>
+    <div class="dropdown-content">
+      <p>Malware is malicious software designed to infect your device and steal data, monitor your activity, or damage your system.</p>
+      
+      <h4>Types of Malware:</h4>
+      <ul>
+        <li><strong>Viruses</strong>: Replicate and spread, often destructive</li>
+        <li><strong>Worms</strong>: Self-spreading, consume bandwidth and resources</li>
+        <li><strong>Trojans</strong>: Disguise as legitimate software, create backdoors</li>
+        <li><strong>Ransomware</strong>: Encrypts files and demands payment</li>
+        <li><strong>Spyware</strong>: Monitors your activity (keylogging, screen capture)</li>
+        <li><strong>Adware</strong>: Displays unwanted ads and collects browsing data</li>
+        <li><strong>Rootkits</strong>: Hide deep in your system, hard to detect</li>
+      </ul>
+
+      <h4>How Malware Spreads:</h4>
+      <ul>
+        <li>Suspicious email attachments</li>
+        <li>Downloads from untrusted websites</li>
+        <li>Infected USB drives or external media</li>
+        <li>Software cracks or pirated software</li>
+        <li>Compromised websites and ads</li>
+        <li>Peer-to-peer file sharing</li>
+      </ul>
+
+      <h4>Antivirus Best Practices:</h4>
+      <ul>
+        <li>Keep antivirus software updated daily</li>
+        <li>Run full system scans weekly or monthly</li>
+        <li>Enable real-time scanning</li>
+        <li>Use reputable antivirus providers (Windows Defender, Norton, Kaspersky)</li>
+        <li>Quarantine suspicious files (don't delete immediately)</li>
+        <li>Consider malware-specialized tools (Malwarebytes)</li>
+      </ul>
+
+      <h4>How to Avoid Malware:</h4>
+      <ul>
+        <li>Never download software from untrusted sources</li>
+        <li>Be cautious with email attachments</li>
+        <li>Don't open suspicious PDF or Office files</li>
+        <li>Avoid peer-to-peer file sharing and torrents</li>
+        <li>Don't use pirated or cracked software</li>
+        <li>Use ad blockers to prevent malicious ads</li>
+        <li>Disable auto-play for CDs and USB drives</li>
+        <li>Keep your firewall enabled</li>
+      </ul>
+
+      <h4>If You Get Malware:</h4>
+      <ul>
+        <li>Disconnect from the internet (for advanced threats)</li>
+        <li>Run a full antivirus scan in Safe Mode</li>
+        <li>Use recovery tools like Malwarebytes or Windows Defender Offline</li>
+        <li>Consider a clean OS reinstall if severely infected</li>
+        <li>Change all passwords from a clean computer</li>
+        <li>Monitor accounts for fraudulent activity</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer">
+    <hr class="sep" />
+    Tip: Test your knowledge with our <a href="quiz.html">interactive quiz →</a>
+  </div>
+</main>
+
+<!-- Goat Assistant AI -->
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<div class="goat-panel" id="goatPanel" aria-live="polite">
+  <div class="goat-head">
+    <strong>🐐 Goat Assistant AI</strong>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+  </div>
+  <div class="goat-chat" id="goatChat"></div>
+  <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
+</div>
+
+<script>
+  // Dropdown toggle functionality
+  function toggleDropdown(event) {
+    const btn = event.target.closest('.dropdown-btn');
+    const content = btn.nextElementSibling;
+    const isActive = btn.classList.contains('active');
+    
+    // Close all other dropdowns
+    document.querySelectorAll('.dropdown-btn.active').forEach(b => {
+      if (b !== btn) {
+        b.classList.remove('active');
+        b.nextElementSibling.classList.remove('show');
+      }
+    });
+    
+    // Toggle current dropdown
+    btn.classList.toggle('active');
+    content.classList.toggle('show');
+  }
+</script>
+
+<script src="js/assistant.js/assistant.js"></script>
+<script src="js/accessibility.js/accessibility.js"></script>
+</body>
+</html>

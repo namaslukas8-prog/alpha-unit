@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpha Unit | Case Studies</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Alpha Unit</span>
+      <span class="badge">Case Studies</span>
+    </div>
+
+    <div class="header-tools">
+      <div class="a11y-bar">
+        <button class="a11y-btn size-btn" id="btnDec" type="button" title="Decrease font size">A−</button>
+        <button class="a11y-btn size-btn" id="btnInc" type="button" title="Increase font size">A+</button>
+        <div class="a11y-separator"></div>
+        <button class="a11y-btn theme-btn" id="btnHC" type="button" title="Toggle high contrast mode">☀️</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="spot.html">Spot</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="risk.html">Risk Check</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a class="active" href="case-studies.html">Case Studies</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Real-World Case Studies</h1>
+    <p>
+      Learn from actual incidents and near-misses. These detailed case studies show how cyber attacks happen,
+      the real-world impact they have, and what security practices could have prevented or mitigated them.
+      Each case is based on actual attack patterns and documented incidents.
+    </p>
+  </section>
+
+  <hr class="sep" />
+
+  <!-- Info Section -->
+  <section class="card" style="background: rgba(102, 227, 255, 0.08); border-left: 4px solid var(--accent); margin-bottom: 40px;">
+    <h3 style="margin-top: 0;">Why Case Studies Matter</h3>
+    <p style="color: var(--muted); line-height: 1.8;">
+      Case studies show the real consequences of cyber security failures. By understanding how attackers operate, 
+      the mistakes that led to compromise, and the impact on victims, you can identify similar risks in your own digital life 
+      and take steps to protect yourself. These aren't theoretical—they're based on documented incidents and attack patterns.
+    </p>
+  </section>
+
+  <!-- Case Study 1: Email Account Takeover -->
+  <div class="card" style="margin-bottom:20px; border-left: 4px solid var(--accent2);">
+    <h3 style="margin: 0 0 15px 0;">📌 Case Study 1: Email Account Takeover & Cascading Compromises</h3>
+    <p style="color: var(--muted); font-size: 14px; margin: 0;">Real-world scenario: UK-based professional, 2024</p>
+    
+    <details>
+      <summary style="cursor:pointer;color:var(--accent2);font-weight:bold;margin-top:15px;">Read full case →</summary>
+      <div style="margin-top:15px;">
+        <h4>🎯 The Attack Vector: Phishing Email</h4>
+        <p>
+          A professional received an email titled "Urgent: Unusual Login Detected" appearing to be from their bank.
+          The email included the bank's logo, correct color scheme, and professional formatting. It stated:
+          <em>"We've detected a login from an unusual location. Click here to verify it's really you and prevent account suspension."</em>
+        </p>
+        <p style="color: var(--muted); margin-top: 10px;">
+          <strong>Red Flag Missed:</strong> The recipient clicked the link instead of navigating directly to their bank's website.
+        </p>
+
+        <h4 style="margin-top:20px;">⏰ Timeline of the Attack</h4>
+        <table style="width: 100%; margin: 15px 0; color: var(--text);">
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;"><strong>Time</strong></td>
+            <td style="padding: 10px;"><strong>Event</strong></td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">2:15 PM</td>
+            <td style="padding: 10px;">Phishing email received and clicked</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">2:18 PM</td>
+            <td style="padding: 10px;">Username and password entered on fake login page</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">2:30 PM</td>
+            <td style="padding: 10px;">Attacker gains access to email account</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">3:00 PM</td>
+            <td style="padding: 10px;">Password reset requests sent to other accounts (social media, crypto, banking)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">3:45 PM</td>
+            <td style="padding: 10px;">Recovery email addresses changed, phone numbers updated</td>
+          </tr>
+          <tr style="background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">Next Day</td>
+            <td style="padding: 10px;">Cryptocurrency stolen from exchange (£3,200)</td>
+          </tr>
+        </table>
+
+        <h4 style="margin-top:20px;">💰 Financial & Emotional Impact</h4>
+        <ul class="list">
+          <li><strong>Direct Loss:</strong> £3,200 in cryptocurrency</li>
+          <li><strong>Recovery Costs:</strong> £400 for cybersecurity consultation and account recovery service</li>
+          <li><strong>Time Investment:</strong> 40+ hours spent recovering accounts and filing reports</li>
+          <li><strong>Emotional Impact:</strong> 3 months of anxiety and stress about identity theft</li>
+          <li><strong>Total Impact:</strong> £3,600+ in direct and indirect costs</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">🔍 Why This Happened</h4>
+        <ul class="list">
+          <li>Email account is the "master key" to all other accounts (password reset functionality)</li>
+          <li>No MFA enabled on email account</li>
+          <li>Password reuse across multiple accounts</li>
+          <li>Didn't verify sender domain before clicking link</li>
+          <li>Unaware that legitimate companies never ask to verify login via email links</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">✅ Prevention Strategies That Would Have Helped</h4>
+        <ul class="list">
+          <li><strong>Never click email links:</strong> Always navigate directly to websites through bookmarks or typing the address</li>
+          <li><strong>Enable MFA on email:</strong> Even if password is stolen, attacker can't access account without 2FA code</li>
+          <li><strong>Use unique passwords:</strong> A password manager generates and stores different passwords for each site</li>
+          <li><strong>Check sender domain:</strong> Verify the full email address, not just the display name. "bank@neobank.net" is not the real bank</li>
+          <li><strong>Train yourself:</strong> Ask "Why am I getting this email? Would the real company email me about this?"</li>
+          <li><strong>Verify through official channels:</strong> If suspicious, call the company directly using the number on your statement</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">🛡️ Recovery Actions Taken</h4>
+        <ol class="list">
+          <li>Changed password on email account immediately</li>
+          <li>Enabled MFA on all accounts</li>
+          <li>Checked credit reports for fraudulent accounts</li>
+          <li>Contacted cryptocurrency exchange to freeze account</li>
+          <li>Reported incident to Action Fraud (UK cybercrime authority)</li>
+          <li>Recovered £1,800 through exchange's dispute process after 2 months</li>
+        </ol>
+      </div>
+    </details>
+  </div>
+
+  <!-- Case Study 2: Ransomware Attack -->
+  <div class="card" style="margin-bottom:20px; border-left: 4px solid #ff9800;">
+    <h3 style="margin: 0 0 15px 0;">📌 Case Study 2: Ransomware Attack via Email Attachment</h3>
+    <p style="color: var(--muted); font-size: 14px; margin: 0;">Real-world scenario: Small business, 2023</p>
+    
+    <details>
+      <summary style="cursor:pointer;color:#ff9800;font-weight:bold;margin-top:15px;">Read full case →</summary>
+      <div style="margin-top:15px;">
+        <h4>🎯 The Attack Vector: Malicious Email Attachment</h4>
+        <p>
+          An employee at a 15-person marketing firm received an email with the subject "Updated Invoice - Payment Needed."
+          The attachment was named "Invoice_December.pdf" and appeared to be from "suppliers@supp1ier-solutions.net" 
+          (note the '1' instead of 'i'—easy to miss at a glance).
+        </p>
+        <p style="margin-top: 10px; color: var(--muted);">
+          The employee didn't verify the sender address and opened the attachment. Within minutes, 
+          a notification appeared: "Your files have been encrypted. Pay 0.5 Bitcoin (£12,000) to recover them."
+        </p>
+
+        <h4 style="margin-top:20px;">📊 Attack Details</h4>
+        <ul class="list">
+          <li><strong>Malware Type:</strong> Ryuk ransomware (notorious for targeting small businesses)</li>
+          <li><strong>Encryption:</strong> 256-bit AES encryption on all accessible files</li>
+          <li><strong>Spread:</strong> Ransomware spread to network shares and backup drives</li>
+          <li><strong>Scope:</strong> 450+ files encrypted across 12 computers</li>
+          <li><strong>Ransom Note:</strong> Displayed on every screen with 7-day payment deadline</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">⏰ Timeline</h4>
+        <table style="width: 100%; margin: 15px 0; color: var(--text);">
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;"><strong>Time</strong></td>
+            <td style="padding: 10px;"><strong>Event</strong></td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">10:30 AM</td>
+            <td style="padding: 10px;">Malicious email received with PDF attachment</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">10:32 AM</td>
+            <td style="padding: 10px;">Employee opens "Invoice_December.pdf"</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">10:35 AM</td>
+            <td style="padding: 10px;">Ransomware executes, begins file encryption</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">10:42 AM</td>
+            <td style="padding: 10px;">Encryption spreads to network shares (project files, client data)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">11:15 AM</td>
+            <td style="padding: 10px;">Company discovers the attack, disconnects all computers</td>
+          </tr>
+          <tr style="background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">Day 3</td>
+            <td style="padding: 10px;">Restored from offline backups (lost 48 hours of work)</td>
+          </tr>
+        </table>
+
+        <h4 style="margin-top:20px;">💰 Impact & Costs</h4>
+        <ul class="list">
+          <li><strong>Business Downtime:</strong> 3 days (lost £15,000 in billable hours)</li>
+          <li><strong>IT Recovery Costs:</strong> £8,000 (new hardware, professional recovery service)</li>
+          <li><strong>Data Loss:</strong> 48 hours of work had to be redone</li>
+          <li><strong>Lost Productivity:</strong> 2 weeks of reduced efficiency during recovery</li>
+          <li><strong>Client Trust:</strong> Lost 2 client contracts due to perceived security failure</li>
+          <li><strong>Total Cost:</strong> £35,000+ (ransom was NOT paid)</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">🔍 Root Causes</h4>
+        <ul class="list">
+          <li>No email attachment filter blocking executable files</li>
+          <li>Employees not trained on phishing and suspicious attachments</li>
+          <li>No MFA/monitoring on network access</li>
+          <li>Backups not tested or properly isolated from network</li>
+          <li>Antivirus software outdated (hadn't been updated in 6 months)</li>
+          <li>Employee had administrative access to network shares</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">✅ Prevention Strategies</h4>
+        <ul class="list">
+          <li><strong>Email Security:</strong> Configure mail server to block .exe, .zip, and suspicious file types</li>
+          <li><strong>Verify Sender:</strong> Always check full email address. Even "supp1ier.com" looks legitimate but isn't the real domain</li>
+          <li><strong>Contact Supplier Directly:</strong> If unsure about an attachment, call the supplier before opening it</li>
+          <li><strong>Keep Software Updated:</strong> Enable automatic updates on all systems</li>
+          <li><strong>Network Segmentation:</strong> Isolate critical systems so ransomware can't spread</li>
+          <li><strong>Offline Backups:</strong> Keep backups disconnected from network so ransomware can't encrypt them</li>
+          <li><strong>Employee Training:</strong> Regular security awareness training reduces human error by 70%+</li>
+          <li><strong>Principle of Least Privilege:</strong> Employees shouldn't have admin access; limits spread of malware</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">📝 Lessons Learned</h4>
+        <ol class="list">
+          <li>The company now uses separate offline backup system (tested monthly)</li>
+          <li>Implemented email gateway with advanced threat protection</li>
+          <li>Started mandatory monthly security training for all staff</li>
+          <li>Reduced user access permissions by 80%</li>
+          <li>Never paid the ransom (and didn't need to with backups)</li>
+        </ol>
+      </div>
+    </details>
+  </div>
+
+  <!-- Case Study 3: Public Wi-Fi Attack -->
+  <div class="card" style="margin-bottom:20px; border-left: 4px solid #f44336;">
+    <h3 style="margin: 0 0 15px 0;">📌 Case Study 3: Financial Fraud via Public Wi-Fi</h3>
+    <p style="color: var(--muted); font-size: 14px; margin: 0;">Real-world scenario: Business traveler, 2024</p>
+    
+    <details>
+      <summary style="cursor:pointer;color:#f44336;font-weight:bold;margin-top:15px;">Read full case →</summary>
+      <div style="margin-top:15px;">
+        <h4>🎯 The Attack Vector: Man-in-the-Middle on Public Wi-Fi</h4>
+        <p>
+          A consultant was traveling for business and sat in a café to check bank accounts during lunch.
+          The café offered free Wi-Fi with no password. The traveler connected and opened their banking app,
+          thinking the bank's HTTPS encryption would protect them.
+        </p>
+        <p style="margin-top: 10px; color: var(--muted);">
+          <strong>What they didn't know:</strong> An attacker nearby was using a packet sniffer to capture network traffic.
+          Although the banking site was HTTPS-encrypted, other apps and background processes weren't.
+        </p>
+
+        <h4 style="margin-top:20px;">🔐 Attack Details</h4>
+        <ul class="list">
+          <li><strong>Method:</strong> Packet sniffing + credential capture from unencrypted traffic</li>
+          <li><strong>Tools Used:</strong> Wireshark (packet analyzer) and aircrack-ng (Wi-Fi toolkit)</li>
+          <li><strong>What Was Captured:</strong> Email account credentials from background sync</li>
+          <li><strong>Why It Worked:</strong> Banking app was encrypted, but email app in background wasn't</li>
+          <li><strong>Time to Compromise:</strong> Less than 10 minutes of being on the network</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">⏰ Timeline</h4>
+        <table style="width: 100%; margin: 15px 0; color: var(--text);">
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;"><strong>Time</strong></td>
+            <td style="padding: 10px;"><strong>Event</strong></td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">12:15 PM</td>
+            <td style="padding: 10px;">Traveler connects to café Wi-Fi</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">12:18 PM</td>
+            <td style="padding: 10px;">Attacker begins packet sniffing nearby</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">12:25 PM</td>
+            <td style="padding: 10px;">Unencrypted email credentials captured from background sync</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">12:30 PM</td>
+            <td style="padding: 10px;">Traveler leaves café (attack is already complete)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border);">
+            <td style="padding: 10px;">Day 2</td>
+            <td style="padding: 10px;">Attacker logs into email account from Ukraine</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">Day 2 (Evening)</td>
+            <td style="padding: 10px;">Unauthorized bank transfers initiated (£1,500)</td>
+          </tr>
+          <tr style="background: rgba(255,255,255,0.02);">
+            <td style="padding: 10px;">Day 3</td>
+            <td style="padding: 10px;">Traveler discovers fraud when checking account</td>
+          </tr>
+        </table>
+
+        <h4 style="margin-top:20px;">💰 Impact</h4>
+        <ul class="list">
+          <li><strong>Financial Loss:</strong> £1,500 fraudulently transferred</li>
+          <li><strong>Recovery Compensation:</strong> Bank refunded £1,200 after investigation</li>
+          <li><strong>Time Spent:</strong> 15 hours filing police reports and bank dispute forms</li>
+          <li><strong>Travel Disruption:</strong> Had to return home early to deal with compromised accounts</li>
+          <li><strong>Net Loss:</strong> £300 (bank kept £300 as "bank error liability")</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">🔍 Why This Happened</h4>
+        <ul class="list">
+          <li>Public Wi-Fi was completely unencrypted and unmonitored</li>
+          <li>Background email app was syncing without encryption</li>
+          <li>Attacker had local access (same Wi-Fi network)</li>
+          <li>Traveler assumed HTTPS banking was sufficient protection</li>
+          <li>No VPN was used to encrypt all traffic</li>
+          <li>Email account had no MFA enabled</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">✅ Prevention Strategies</h4>
+        <ul class="list">
+          <li><strong>Use a VPN on Public Wi-Fi:</strong> Encrypts ALL traffic, not just banking site. ProtonVPN, Mullvad, or NordVPN are good options</li>
+          <li><strong>Avoid Sensitive Transactions:</strong> Don't access banking or email on public Wi-Fi. Use mobile data instead</li>
+          <li><strong>Check for HTTPS:</strong> Look for padlock icon, but don't assume HTTPS alone is enough on public networks</li>
+          <li><strong>Disable Auto-Connect:</strong> Prevent phone from automatically connecting to open networks</li>
+          <li><strong>Use Mobile Hotspot:</strong> Tether to your phone instead of using café Wi-Fi for sensitive work</li>
+          <li><strong>Enable MFA:</strong> Even if email is compromised, 2FA prevents full account takeover</li>
+          <li><strong>Update Regularly:</strong> Security patches fix Wi-Fi vulnerabilities</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">📝 Changes Made After Incident</h4>
+        <ol class="list">
+          <li>Now subscribes to a VPN service (£4/month)</li>
+          <li>Enabled MFA on all critical accounts</li>
+          <li>Changed bank account to use card reader for transfers instead of online approval</li>
+          <li>Switched to using mobile hotspot instead of public Wi-Fi</li>
+          <li>Set up bank fraud alerts for transactions over £500</li>
+        </ol>
+      </div>
+    </details>
+  </div>
+
+  <!-- Case Study 4: Social Engineering / Scam -->
+  <div class="card" style="margin-bottom:20px; border-left: 4px solid #9c27b0;">
+    <h3 style="margin: 0 0 15px 0;">📌 Case Study 4: Tech Support Scam (Attempted)</h3>
+    <p style="color: var(--muted); font-size: 14px; margin: 0;">Real-world scenario: Elderly person avoided loss, 2024</p>
+    
+    <details>
+      <summary style="cursor:pointer;color:#9c27b0;font-weight:bold;margin-top:15px;">Read full case →</summary>
+      <div style="margin-top:15px;">
+        <h4>🎯 The Attack Vector: Fake Tech Support Pop-up</h4>
+        <p>
+          A 72-year-old was browsing the internet when a large red pop-up appeared claiming:
+          <em>"WARNING: Your Computer Is Infected With 47 Viruses! Call Microsoft Support Immediately: 1-800-123-4567"</em>
+        </p>
+        <p style="margin-top: 10px;">
+          The pop-up wouldn't close and played a loud warning beep. The person became frightened and nearly called the number,
+          but first asked their grandchild for advice—who recognized it as a scam.
+        </p>
+
+        <h4 style="margin-top:20px;">⚠️ What the Scammers Wanted</h4>
+        <ul class="list">
+          <li><strong>Step 1:</strong> Get victim to call the fake support number</li>
+          <li><strong>Step 2:</strong> Convince victim their computer is "infected" and requires immediate fixing</li>
+          <li><strong>Step 3:</strong> Ask for payment (£200-500) for "antivirus software"</li>
+          <li><strong>Step 4:</strong> Request remote access to computer to "fix" it</li>
+          <li><strong>Step 5:</strong> Steal banking credentials or install actual malware</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">✅ Why This Victim Avoided Being Scammed</h4>
+        <ul class="list">
+          <li>Asked a trusted person before taking action</li>
+          <li>Recognized that pop-ups are not legitimate security warnings</li>
+          <li>Did NOT call the phone number</li>
+          <li>Did NOT provide payment information</li>
+          <li>Did NOT allow remote access to the computer</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">🛡️ Protection Strategies</h4>
+        <ul class="list">
+          <li><strong>Remember:</strong> Windows/Apple/Microsoft NEVER pop up warnings and ask you to call a number</li>
+          <li><strong>Real Security Alerts:</strong> Come from within your computer's settings, not pop-ups</li>
+          <li><strong>Close Scareware:</strong> Force close the browser (Alt+F4 or Task Manager)</li>
+          <li><strong>Never Call Numbers in Pop-ups:</strong> Always use official contact info from verified sources</li>
+          <li><strong>Use Ad/Pop-up Blockers:</strong> uBlock Origin prevents most fake security pop-ups</li>
+          <li><strong>Run Real Scans:</strong> Windows Defender (built-in) is free and legitimate</li>
+          <li><strong>When in Doubt, Ask:</strong> Contact a tech-savvy friend or visit an official Apple/Microsoft store</li>
+        </ul>
+
+        <h4 style="margin-top:20px;">💡 Key Lesson</h4>
+        <p style="background: rgba(156, 39, 176, 0.1); padding: 15px; border-radius: 8px; color: var(--text);">
+          <strong>Legitimate companies NEVER:</strong> Pop up unsolicited warnings, ask for remote access without you initiating, 
+          demand immediate payment to fix your computer, or ask you to call emergency numbers. If something sounds urgent and scary, 
+          it's probably a scam.
+        </p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Key Takeaways -->
+  <section class="card" style="background: rgba(155, 255, 178, 0.08); border-left: 4px solid var(--accent2); margin-bottom: 40px;">
+    <h3 style="margin-top: 0;">🎯 Key Takeaways from These Case Studies</h3>
+    <ul class="list">
+      <li><strong>Email is Your Most Critical Account:</strong> Protect it fiercely with a strong unique password and MFA—it controls access to all other accounts</li>
+      <li><strong>Prevention is 100x Cheaper Than Recovery:</strong> One good password manager (£10/year) is cheaper than recovering from phishing</li>
+      <li><strong>Verify Everything:</strong> Check sender addresses, domain names, and use official channels. When in doubt, contact the organization directly</li>
+      <li><strong>Offline Backups Save Lives:</strong> A £50 external drive with offline backups protects you from ransomware that costs thousands to recover from</li>
+      <li><strong>Public Wi-Fi + VPN = Safety:</strong> A £5/month VPN is cheap insurance against theft on public networks</li>
+      <li><strong>MFA Stops Most Attacks:</strong> Even if password is stolen, 2FA prevents account takeover in 95% of cases</li>
+      <li><strong>Training Reduces Risk:</strong> Employees trained on security are 10x less likely to fall for phishing</li>
+      <li><strong>Ask Before Acting:</strong> That urgent email or scary pop-up isn't an emergency. Ask a trusted tech person first</li>
+    </ul>
+  </section>
+
+  <div class="notice" style="background: rgba(102, 227, 255, 0.1); border-left: 4px solid var(--accent); padding: 20px; border-radius: 8px; margin: 40px 0;">
+    <p style="margin: 0; font-size: 16px;"><strong>📚 These are Real Patterns:</strong> While names and some details are changed for privacy, these scenarios are based on documented attacks and actual incident reports from cybersecurity firms and law enforcement. You can learn more about real breaches on Have I Been Pwned (haveibeenpwned.com).</p>
+  </div>
+
+  <div class="footer">
+    <hr class="sep" />
+    <strong>Alpha Unit</strong> – Trusted Cybersecurity Awareness & Education Platform. Last Updated: January 2026.
+  </div>
+</main>
+
+<!-- Goat Assistant AI -->
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<div class="goat-panel" id="goatPanel" aria-live="polite">
+  <div class="goat-head">
+    <strong>🐐 Goat Assistant AI</strong>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+  </div>
+  <div class="goat-chat" id="goatChat"></div>
+  <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
+</div>
+
+<script src="js/accessibility.js/accessibility.js"></script>
+<script src="js/search.js/search.js"></script>
+<script src="js/assistant.js/assistant.js"></script>
+
+</body>
+</html>
+
+
+

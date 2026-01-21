@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpha Unit | Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Alpha Unit</span>
+      <span class="badge">Quiz</span>
+    </div>
+
+    <div class="header-tools">
+      <div class="a11y-bar">
+        <button class="a11y-btn size-btn" id="btnDec" type="button" title="Decrease font size">A−</button>
+        <button class="a11y-btn size-btn" id="btnInc" type="button" title="Increase font size">A+</button>
+        <div class="a11y-separator"></div>
+        <button class="a11y-btn theme-btn" id="btnHC" type="button" title="Toggle high contrast mode">☀️</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="spot.html">Spot</a></li>
+          <li><a class="active" href="quiz.html">Quiz</a></li>
+          <li><a href="risk.html">Risk Check</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Cyber Security Quiz</h1>
+    <p>Test your knowledge on phishing, passwords, MFA, ransomware, and social engineering. This interactive quiz helps reinforce safe cyber practices and identify areas for improvement.</p>
+  </section>
+
+  <hr class="sep" />
+
+  <!-- Quiz Info Cards -->
+  <section class="grid" style="margin-bottom: 40px;">
+    <div class="card">
+      <h4 style="color: var(--accent); margin-top: 0;">📋 30 Questions</h4>
+      <p style="margin: 10px 0; color: var(--muted);">Comprehensive coverage of essential cyber security topics</p>
+    </div>
+    <div class="card">
+      <h4 style="color: var(--accent); margin-top: 0;">⏱️ 15 Minutes</h4>
+      <p style="margin: 10px 0; color: var(--muted);">Average completion time for the full quiz</p>
+    </div>
+    <div class="card">
+      <h4 style="color: var(--accent); margin-top: 0;">📊 Instant Results</h4>
+      <p style="margin: 10px 0; color: var(--muted);">Get detailed feedback and personalized recommendations</p>
+    </div>
+  </section>
+
+  <!-- Topics Covered Section -->
+  <section class="card" style="background: rgba(102, 227, 255, 0.08); border-left: 4px solid var(--accent); margin-bottom: 40px;">
+    <h3 style="margin-top: 0;">Topics Covered in This Quiz</h3>
+    <div class="grid">
+      <div>
+        <h4 style="color: var(--accent2); font-size: 14px;">Phishing & Email Security</h4>
+        <p style="font-size: 14px; color: var(--muted);">Identifying suspicious emails and avoiding credential theft</p>
+      </div>
+      <div>
+        <h4 style="color: var(--accent2); font-size: 14px;">Passwords & Authentication</h4>
+        <p style="font-size: 14px; color: var(--muted);">Creating strong passwords and using password managers</p>
+      </div>
+      <div>
+        <h4 style="color: var(--accent2); font-size: 14px;">Multi-Factor Authentication</h4>
+        <p style="font-size: 14px; color: var(--muted);">Understanding MFA types and their importance</p>
+      </div>
+      <div>
+        <h4 style="color: var(--accent2); font-size: 14px;">Ransomware & Malware</h4>
+        <p style="font-size: 14px; color: var(--muted);">Recognizing threats and protecting your devices</p>
+      </div>
+      <div>
+        <h4 style="color: var(--accent2); font-size: 14px;">Social Engineering</h4>
+        <p style="font-size: 14px; color: var(--muted);">Defending against manipulation and scams</p>
+      </div>
+      <div>
+        <h4 style="color: var(--accent2); font-size: 14px;">Incident Response</h4>
+        <p style="font-size: 14px; color: var(--muted);">What to do if your account is compromised</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Tips Section -->
+  <section class="card" style="background: rgba(155, 255, 178, 0.08); border-left: 4px solid var(--accent2); margin-bottom: 40px;">
+    <h3 style="margin-top: 0;">💡 Quiz Tips</h3>
+    <ul class="list">
+      <li><strong>Read carefully:</strong> Each question and answer choice contains important details</li>
+      <li><strong>No time limit:</strong> Take as much time as you need—this is for learning, not racing</li>
+      <li><strong>Learn from results:</strong> After each question, you'll see the correct answer and explanation</li>
+      <li><strong>Honest answers:</strong> Your actual knowledge helps identify learning gaps</li>
+      <li><strong>Use resources:</strong> Visit the <a href="learn.html" style="color: var(--accent);">Learn</a> page for deeper information on any topic</li>
+    </ul>
+  </section>
+
+  <section id="quizContainer">
+    <div id="quizStart" class="quiz-start">
+      <div style="text-align: center;">
+        <p style="font-size: 18px; color: var(--text); margin: 20px 0;">Ready to test your cyber security knowledge?</p>
+        <p style="color: var(--muted); margin-bottom: 30px;">Click the button below to start the 30-question quiz.</p>
+        <button class="btn primary" id="startBtn">Start Quiz</button>
+      </div>
+    </div>
+
+    <div id="quizContent" style="display:none;">
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p id="questionCounter" style="text-align:center;color:var(--muted);margin:10px 0;">Question 1 of 10</p>
+
+      <div class="card">
+        <h3 id="question"></h3>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div style="text-align:right;margin-top:20px;">
+        <button class="btn" id="nextBtn" style="display:none;">Next Question</button>
+      </div>
+    </div>
+
+    <div id="quizResults" style="display:none;">
+      <div class="card" style="text-align:center; background: rgba(102, 227, 255, 0.05); border: 2px solid var(--accent);">
+        <h2 style="margin-top: 0;">🎉 Quiz Complete!</h2>
+        <p id="scoreText" style="font-size:3em; color:var(--accent2); margin:20px 0; font-weight: bold;"></p>
+        <p id="feedbackText" style="font-size: 18px; margin: 15px 0; color: var(--text);"></p>
+        <p id="feedbackDetails" style="color: var(--muted); margin: 20px 0; line-height: 1.8;"></p>
+        <div style="margin: 30px 0; padding: 20px; background: rgba(155, 255, 178, 0.1); border-radius: 8px;">
+          <h4 style="margin-top: 0; color: var(--accent2);">📚 Next Steps</h4>
+          <p style="color: var(--muted); margin: 10px 0;">Visit the <a href="learn.html" style="color: var(--accent);">Learn page</a> to review topics or check the <a href="spot.html" style="color: var(--accent);">Spot the Scam</a> page to practice identifying real-world threats.</p>
+        </div>
+        <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+          <button class="btn primary" id="retakeBtn">Retake Quiz</button>
+          <a class="btn" href="learn.html">Learn More</a>
+          <a class="btn" href="index.html">Return Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="notice" style="background: rgba(102, 227, 255, 0.1); border-left: 4px solid var(--accent); padding: 20px; border-radius: 8px; margin: 40px 0;">
+    <p style="margin: 0; font-size: 16px;"><strong>💡 Tip:</strong> Use your quiz results to identify areas where you'd like to learn more. Visit our <a href="learn.html" style="color: var(--accent);">comprehensive learning guides</a> for detailed information on any topic.</p>
+  </div>
+
+  <div class="footer">
+    <hr class="sep" />
+    <strong>Alpha Unit</strong> – Trusted Cybersecurity Awareness & Education Platform. Last Updated: January 2026.
+  </div>
+</main>
+
+<!-- Goat Assistant AI -->
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<div class="goat-panel" id="goatPanel" aria-live="polite">
+  <div class="goat-head">
+    <strong>🐐 Goat Assistant AI</strong>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+  </div>
+  <div class="goat-chat" id="goatChat"></div>
+  <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
+</div>
+
+<script src="js/quiz.js/quiz.js"></script>
+<script src="js/accessibility.js/accessibility.js"></script>
+<script src="js/search.js/search.js"></script>
+<script src="js/assistant.js/assistant.js"></script>
+
+</body>
+</html>
+
+
+

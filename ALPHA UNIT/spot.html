@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpha Unit | Spot the Scam</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Alpha Unit</span>
+      <span class="badge">Spot the Scam</span>
+    </div>
+
+    <div class="header-tools">
+      <div class="a11y-bar">
+        <button class="a11y-btn size-btn" id="btnDec" type="button" title="Decrease font size">A−</button>
+        <button class="a11y-btn size-btn" id="btnInc" type="button" title="Increase font size">A+</button>
+        <div class="a11y-separator"></div>
+        <button class="a11y-btn theme-btn" id="btnHC" type="button" title="Toggle high contrast mode">☀️</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a class="active" href="spot.html">Spot</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="risk.html">Risk Check</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Spot the Scam</h1>
+    <p>
+      Can you identify the red flags in these real-world examples?
+      Examine each message carefully and find the warning signs that signal a phishing attempt or scam.
+    </p>
+  </section>
+
+  <hr class="sep" />
+
+  <section id="spotContainer">
+    <!-- Example 1: Email Phishing -->
+    <div class="card">
+      <h3>Example 1: Amazon Account Verification Phishing</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>From:</strong> support@amaazn-verify.com</p>
+        <p><strong>Subject:</strong> ⚠️ URGENT: Your account has been compromised. Verify now!</p>
+        <p style="margin:10px 0;line-height:1.6;">
+          Dear Valued Customer,<br><br>
+          We've detected unusual activity on your account. <strong>Click here immediately</strong> to verify your identity and restore access.
+          Failure to act within 24 hours will result in permanent suspension.<br><br>
+          <a href="#" style="background:var(--danger);padding:8px 15px;border-radius:4px;color:white;display:inline-block;">VERIFY ACCOUNT NOW</a>
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Domain Mismatch:</strong> "amaazn-verify.com" is not Amazon's real domain (amazon.com)</li>
+            <li><strong>Artificial Urgency:</strong> "24-hour deadline" creates panic to bypass critical thinking</li>
+            <li><strong>Generic Greeting:</strong> "Dear Valued Customer" instead of your actual name</li>
+            <li><strong>Threatening Language:</strong> "permanent suspension" – designed to scare you</li>
+            <li><strong>Unusual Link:</strong> Real companies don't ask you to verify via email links</li>
+            <li><strong>No Transaction Details:</strong> Doesn't specify which activity or date</li>
+            <li><strong>Capitalized Text:</strong> Using excessive caps suggests low legitimacy</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Go directly to amazon.com in your browser (don't click the link). Log in and check your account. Or call Amazon customer service directly.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Example 2: SMS/Text Scam -->
+    <div class="card">
+      <h3>Example 2: Prize/Lottery Text Message Scam</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>From:</strong> +447911 123456 (Unknown Number)</p>
+        <p style="margin:10px 0;line-height:1.6;">
+          Hi, you've won a £500 Amazon gift card! Click here to claim your prize now: bit.ly/gz8q2k<br><br>
+          Reply STOP to opt out.
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Unexpected Prize:</strong> You didn't enter any contest</li>
+            <li><strong>Shortened URL:</strong> "bit.ly" hides the real destination – legitimate companies use direct links</li>
+            <li><strong>Unknown Sender:</strong> Random phone number, not Amazon's official number</li>
+            <li><strong>Too Good to Be True:</strong> Free £500 gift card with no effort</li>
+            <li><strong>Urgency Language:</strong> "Claim NOW" pressures you to act fast</li>
+            <li><strong>Legitimate Disclaimer:</strong> The "STOP to opt out" is added to seem legitimate</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Do NOT click the link. Delete the message. Check your email/account directly for any prizes (legitimate companies contact via official channels).</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Example 3: Payment Impersonation -->
+    <div class="card">
+      <h3>Example 3: Fake PayPal Payment Failure</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>From:</strong> paypa1-secure@paypalservice.net</p>
+        <p><strong>Subject:</strong> Your PayPal Payment Failed - Action Required</p>
+        <p style="margin:10px 0;line-height:1.6;">
+          Your recent payment could not be processed due to security issues. Update your payment method immediately to avoid service interruption and account suspension.<br><br>
+          <a href="#" style="background:var(--danger);padding:8px 15px;border-radius:4px;color:white;display:inline-block;">UPDATE PAYMENT INFORMATION</a>
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Domain Typo:</strong> "paypa1" (with number 1) instead of "paypal"</li>
+            <li><strong>Wrong Domain Extension:</strong> Real PayPal uses @paypal.com, not @paypalservice.net</li>
+            <li><strong>Unusual Request:</strong> PayPal never asks to update payment via email links</li>
+            <li><strong>Vague Language:</strong> No specific transaction ID, amount, or date mentioned</li>
+            <li><strong>Threat of Suspension:</strong> Creates fear to bypass logic</li>
+            <li><strong>Professional Appearance:</strong> Scammers copy the real PayPal design and tone</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Log into paypal.com directly (don't click the link). Check your account history. Call PayPal support if there's a real issue.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Example 4: Bank Phishing -->
+    <div class="card">
+      <h3>Example 4: Bank Account Verification Email</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>From:</strong> security@barclaysbank-update.co.uk</p>
+        <p><strong>Subject:</strong> Barclays: Verify Your Identity</p>
+        <p style="margin:10px 0;line-height:1.6;">
+          Dear Barclays Customer,<br><br>
+          Due to recent security enhancements, we need to verify your banking details. Please confirm your full name, account number, sort code, and PIN code by replying to this email or clicking below:<br><br>
+          <a href="#" style="background:var(--danger);padding:8px 15px;border-radius:4px;color:white;display:inline-block;">VERIFY DETAILS</a>
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Wrong Domain:</strong> Real Barclays uses barclays.com, not barclaysbank-update.co.uk</li>
+            <li><strong>Never Asks for PIN:</strong> Real banks NEVER ask for PIN or full account details via email</li>
+            <li><strong>Red Alert Request:</strong> Banks never verify sensitive data through email or web forms</li>
+            <li><strong>Generic Greeting:</strong> "Dear Barclays Customer" not personalized</li>
+            <li><strong>Suspicious Reasoning:</strong> "Security enhancements" as excuse to collect data</li>
+            <li><strong>Email Reply Risk:</strong> Asking to reply to email puts sensitive info in email system</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Hang up and call your bank directly using the number on your bank card or official website. Real banks verify you through secure login portals, not email.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Example 5: Delivery Scam -->
+    <div class="card">
+      <h3>Example 5: Fake Package Delivery Notification</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>From:</strong> delivery-notification@fedex-service.com</p>
+        <p><strong>Subject:</strong> Your FedEx Delivery Attempt Failed</p>
+        <p style="margin:10px 0;line-height:1.6;">
+          We attempted to deliver your package, but you were not home. Click the link below to reschedule or pay the $5 re-delivery fee:<br><br>
+          <a href="#" style="background:var(--danger);padding:8px 15px;border-radius:4px;color:white;display:inline-block;">RESCHEDULE DELIVERY</a>
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Domain Mismatch:</strong> fedex-service.com not fedex.com</li>
+            <li><strong>No Tracking Number:</strong> Real notifications include specific tracking info</li>
+            <li><strong>Payment Request via Link:</strong> FedEx never asks for payment via email links</li>
+            <li><strong>You Weren't Expecting It:</strong> You'd remember if you ordered something</li>
+            <li><strong>Generic Message:</strong> No specific address, package weight, or delivery date</li>
+            <li><strong>Unusual Fee:</strong> FedEx doesn't charge for re-delivery via email</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Go directly to fedex.com and track your package, or check your purchase history. Call FedEx directly if you have questions.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Example 6: Tech Support Scam -->
+    <div class="card">
+      <h3>Example 6: Fake Windows Security Alert Pop-up</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>Pop-up Message (appears on screen):</strong></p>
+        <p style="margin:10px 0;line-height:1.6;background:red;color:white;padding:20px;border-radius:8px;">
+          ⚠️ SECURITY ALERT ⚠️<br><br>
+          Your computer is infected with 47 viruses!<br>
+          Your personal information may be at risk.<br><br>
+          Call Microsoft Support immediately: 1-800-XXX-XXXX<br>
+          Do not close this window!<br><br>
+          <button style="background:yellow;padding:10px 20px;font-weight:bold;">CLEAN YOUR COMPUTER NOW</button>
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Unexpected Pop-up:</strong> Windows doesn't warn you with urgent pop-ups like this</li>
+            <li><strong>Threatening Language:</strong> "47 viruses", "at risk" designed to panic you</li>
+            <li><strong>Urgent Phone Number:</strong> Real Microsoft support doesn't ask you to call with emergency numbers</li>
+            <li><strong>"Don't Close":</strong> This is a red flag – legitimate warnings never use this language</li>
+            <li><strong>Impossible Claim:</strong> No software can accurately count viruses like this</li>
+            <li><strong>Scammer Phone Number:</strong> Calling this number connects you to tech support scammers</li>
+            <li><strong>Generic Threat:</strong> No specific details about which files are infected</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Force close the browser (Alt+F4 or Task Manager). Run a real antivirus scan. Never call numbers from pop-ups. Microsoft is always reachable through official support.microsoft.com.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Example 7: LinkedIn Job Scam -->
+    <div class="card">
+      <h3>Example 7: Work-From-Home Job Offer</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>From:</strong> jobs@quickcashonline.net</p>
+        <p><strong>Subject:</strong> Congratulations! Earn $5000/Week From Home</p>
+        <p style="margin:10px 0;line-height:1.6;">
+          Dear Applicant,<br><br>
+          We're impressed by your profile. We're hiring for a Remote Data Entry Position with NO EXPERIENCE REQUIRED.<br><br>
+          Earnings: $5,000 per week<br>
+          Hours: Flexible, 10 hours/week<br>
+          Requirements: $49 training fee (refunded after first week)<br><br>
+          Interested? Click below to enroll in our training program:<br>
+          <a href="#" style="background:var(--danger);padding:8px 15px;border-radius:4px;color:white;display:inline-block;">ENROLL NOW</a>
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Unrealistic Earnings:</strong> $5,000/week for 10 hours is $500/hour – not realistic for data entry</li>
+            <li><strong>No Experience Needed:</strong> Legitimate jobs require some qualifications</li>
+            <li><strong>Upfront Fee:</strong> Real employers never ask for training fees before hiring</li>
+            <li><strong>Suspicious Promise:</strong> "Refunded after first week" rarely happens</li>
+            <li><strong>Unknown Sender:</strong> quickcashonline.net is not a legitimate recruiter</li>
+            <li><strong>Generic Greeting:</strong> No personalization, same message sent to many</li>
+            <li><strong>Too Easy:</strong> No interview, no application process mentioned</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Do not pay any fees. Research the company on LinkedIn and Glassdoor. Real employers contact you through official hiring portals or recruiters with verified credentials.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Example 8: Romance Scam -->
+    <div class="card">
+      <h3>Example 8: Romance Scam on Dating App</h3>
+      <div class="scam-example" style="background:var(--card);padding:15px;border-radius:8px;border-left:4px solid var(--accent2);">
+        <p><strong>From:</strong> Profile "Michael" on dating app (after 2 weeks of chatting)</p>
+        <p style="margin:10px 0;line-height:1.6;">
+          Hi sweetheart! I really care about you. I have a business emergency and need help urgently. I'm stuck overseas and need $2,000 for an emergency flight home. Can you wire me the money? I promise I'll pay you back as soon as I land. I love you. ❤️
+        </p>
+      </div>
+      <details>
+        <summary style="cursor:pointer;color:var(--accent2);margin-top:10px;font-weight:600;">🚩 Show red flags</summary>
+        <div style="background:rgba(155,255,178,0.1);padding:15px;border-radius:8px;margin-top:10px;">
+          <ul class="list">
+            <li><strong>Quick Emotional Connection:</strong> They profess love/commitment very quickly</li>
+            <li><strong>Avoiding Video Chat:</strong> If asked, they always have excuses (bad camera, no internet)</li>
+            <li><strong>Sudden Emergency:</strong> After building trust, they request money for an "emergency"</li>
+            <li><strong>Money Request Escalation:</strong> Starts small, increases over time</li>
+            <li><strong>Overseas Story:</strong> Common excuse for not meeting in person</li>
+            <li><strong>Wire Transfer Urgency:</strong> "Wire money quickly" – untraceable method</li>
+            <li><strong>Promise to Repay:</strong> They'll always promise to pay back (they won't)</li>
+            <li><strong>Generic Photos:</strong> Profile photos are often stolen from real people</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--accent2);"><strong>What to do:</strong> Hang up immediately. Reverse image search their photos. Real romantic interests will meet in person and won't ask for money. Report the profile to the dating app.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Key Takeaways Section -->
+  <section class="card" style="background:rgba(102,227,255,0.1);border-left:4px solid var(--accent);">
+    <h3>Key Takeaways</h3>
+    <ul class="list">
+      <li><strong>Verify through official channels:</strong> When in doubt, contact the company directly using the number on their official website or your physical card</li>
+      <li><strong>Hover over links:</strong> Before clicking, hover your mouse to see the real URL (not the display text)</li>
+      <li><strong>Check the sender:</strong> Look closely at email addresses – typos like "paypa1" or wrong domains are red flags</li>
+      <li><strong>Legitimate companies never:</strong> Ask for passwords, PINs, or full account details via email; request payment through email links; threaten immediate account closure</li>
+      <li><strong>Trust your instincts:</strong> If something feels off or too good to be true, it probably is</li>
+      <li><strong>When in doubt, say no:</strong> It's better to be cautious than to fall victim to a scam</li>
+      <li><strong>Report scams:</strong> Report phishing to the real company and to the Anti-Phishing Working Group (apwg.org)</li>
+    </ul>
+  </section>
+
+  <div class="notice">
+    ✓ Always verify by contacting the company directly through their official website or phone number, never by clicking email links. When in doubt, ask someone you trust!
+  </div>
+
+  <div class="footer">
+    <hr class="sep" />
+    Alpha Unit – Cyber Security Awareness. No personal data is collected.
+  </div>
+</main>
+
+<!-- Goat Assistant AI -->
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<div class="goat-panel" id="goatPanel" aria-live="polite">
+  <div class="goat-head">
+    <strong>🐐 Goat Assistant AI</strong>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+  </div>
+  <div class="goat-chat" id="goatChat"></div>
+  <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
+</div>
+
+<script src="js/accessibility.js/accessibility.js"></script>
+<script src="js/search.js/search.js"></script>
+<script src="js/assistant.js/assistant.js"></script>
+
+</body>
+</html>
+
+
+

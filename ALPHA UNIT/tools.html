@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpha Unit | Tools</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Alpha Unit</span>
+      <span class="badge">Tools</span>
+    </div>
+
+    <div class="header-tools">
+      <div class="a11y-bar">
+        <button class="a11y-btn size-btn" id="btnDec" type="button" title="Decrease font size">A−</button>
+        <button class="a11y-btn size-btn" id="btnInc" type="button" title="Increase font size">A+</button>
+        <div class="a11y-separator"></div>
+        <button class="a11y-btn theme-btn" id="btnHC" type="button" title="Toggle high contrast mode">☀️</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="spot.html">Spot</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="risk.html">Risk Check</a></li>
+          <li><a class="active" href="tools.html">Tools</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Cyber Security Tools</h1>
+    <p>
+      A comprehensive collection of recommended, tested tools to help you stay secure online.
+      These are trusted, free or affordable options for password management, VPNs, encryption, backups, and more.
+      All links open in a new window for your convenience.
+    </p>
+  </section>
+
+  <hr class="sep" />
+
+  <!-- Tool Categories Info -->
+  <section class="card" style="background: rgba(102, 227, 255, 0.08); border-left: 4px solid var(--accent); margin-bottom: 40px;">
+    <h3 style="margin-top: 0;">Why Use These Tools?</h3>
+    <p style="color: var(--muted); line-height: 1.8;">
+      Having the right security tools is like having locks on your doors, alarms on your windows, and security cameras outside your home. 
+      Each tool protects a different aspect of your digital life. Below, you'll find tools organized by function with descriptions, 
+      pricing, and direct links to official websites.
+    </p>
+  </section>
+
+  <!-- Password Managers -->
+  <section class="card">
+    <h3>🔐 Password Managers</h3>
+    <p style="color: var(--muted); margin-bottom: 20px;">Store unique, strong passwords securely without memorizing them. Use a password manager for every account.</p>
+    
+    <div style="margin: 20px 0; padding: 15px; background: rgba(155, 255, 178, 0.08); border-radius: 8px; border-left: 3px solid var(--accent2);">
+      <h4 style="margin-top: 0;">Bitwarden 🌟 Recommended for Individuals</h4>
+      <p style="color: var(--muted); margin: 8px 0;">Free, open-source, cross-platform. Premium plan adds advanced features.</p>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free (or $10/year for Premium)</li>
+        <li><strong>Best for:</strong> Budget-conscious users who want transparency</li>
+        <li><strong>Features:</strong> Unlimited passwords, 2FA, auto-fill, encrypted vault, secure sharing, browser extension</li>
+        <li><strong>Platforms:</strong> Windows, macOS, Linux, iOS, Android, Web</li>
+      </ul>
+      <p><a href="https://bitwarden.com/" target="_blank" style="color: var(--accent);">Visit Bitwarden →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(155, 255, 178, 0.08); border-radius: 8px; border-left: 3px solid var(--accent2);">
+      <h4 style="margin-top: 0;">1Password 🏆 Premium Choice</h4>
+      <p style="color: var(--muted); margin: 8px 0;">Professional, feature-rich password manager with exceptional security.</p>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> $2.99/month individual, $4.99/month for families</li>
+        <li><strong>Best for:</strong> Families, professionals, those who want premium support</li>
+        <li><strong>Features:</strong> Unlimited passwords, secure notes, file storage, Travel Mode, emergency access, family organization</li>
+        <li><strong>Platforms:</strong> Windows, macOS, iOS, Android, Web</li>
+      </ul>
+      <p><a href="https://1password.com/" target="_blank" style="color: var(--accent);">Visit 1Password →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(155, 255, 178, 0.08); border-radius: 8px; border-left: 3px solid var(--accent2);">
+      <h4 style="margin-top: 0;">KeePass 💾 Open-Source Offline</h4>
+      <p style="color: var(--muted); margin: 8px 0;">Free, offline-first approach. You control your password database file.</p>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Completely free</li>
+        <li><strong>Best for:</strong> Advanced users who want full control</li>
+        <li><strong>Features:</strong> Open-source, offline storage, portable version, plugins available</li>
+        <li><strong>Platforms:</strong> Windows, Linux, macOS (via KeePassXC)</li>
+      </ul>
+      <p><a href="https://keepass.info/" target="_blank" style="color: var(--accent);">Visit KeePass →</a></p>
+    </div>
+  </section>
+
+  <!-- Authenticator Apps -->
+  <section class="card">
+    <h3>🔑 Two-Factor Authentication (2FA) Apps</h3>
+    <p style="color: var(--muted); margin-bottom: 20px;">Generate secure time-based codes for 2FA. Much safer than SMS codes.</p>
+    
+    <div style="margin: 20px 0; padding: 15px; background: rgba(102, 227, 255, 0.08); border-radius: 8px; border-left: 3px solid var(--accent);">
+      <h4 style="margin-top: 0;">Google Authenticator 🌐 Most Popular</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free</li>
+        <li><strong>Platforms:</strong> iOS, Android</li>
+        <li><strong>Features:</strong> Simple, reliable, widely supported by services</li>
+      </ul>
+      <p><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" target="_blank" style="color: var(--accent);">Android →</a> | 
+      <a href="https://apps.apple.com/us/app/google-authenticator/id388497605" target="_blank" style="color: var(--accent);">iOS →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(102, 227, 255, 0.08); border-radius: 8px; border-left: 3px solid var(--accent);">
+      <h4 style="margin-top: 0;">Authy ☁️ Cloud Backup</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free</li>
+        <li><strong>Platforms:</strong> iOS, Android, Windows, macOS, Web</li>
+        <li><strong>Features:</strong> Cloud backup, multi-device sync, beautiful UI</li>
+      </ul>
+      <p><a href="https://authy.com/" target="_blank" style="color: var(--accent);">Visit Authy →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(102, 227, 255, 0.08); border-radius: 8px; border-left: 3px solid var(--accent);">
+      <h4 style="margin-top: 0;">Microsoft Authenticator 🔷</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free</li>
+        <li><strong>Platforms:</strong> iOS, Android</li>
+        <li><strong>Features:</strong> Integrates with Microsoft accounts, biometric login</li>
+      </ul>
+      <p><a href="https://www.microsoft.com/en-us/security/mobile-authenticator-app" target="_blank" style="color: var(--accent);">Visit Microsoft Authenticator →</a></p>
+    </div>
+  </section>
+
+  <!-- VPN Services -->
+  <section class="card">
+    <h3>🛡️ VPN (Virtual Private Network)</h3>
+    <p style="color: var(--muted); margin-bottom: 20px;">Encrypt your internet connection and hide your IP address on public Wi-Fi and untrusted networks.</p>
+    
+    <div style="margin: 20px 0; padding: 15px; background: rgba(255, 152, 0, 0.08); border-radius: 8px; border-left: 3px solid #ff9800;">
+      <h4 style="margin-top: 0;">ProtonVPN 🌟 Privacy-First</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free tier available, or €4.99/month for Plus</li>
+        <li><strong>Best for:</strong> Privacy-conscious users, Swiss-based (strong privacy laws)</li>
+        <li><strong>Features:</strong> Secure Core (double encryption), No-log policy, Kill switch, Ad blocker in premium</li>
+        <li><strong>Platforms:</strong> Windows, macOS, Linux, iOS, Android</li>
+      </ul>
+      <p><a href="https://protonvpn.com/" target="_blank" style="color: var(--accent);">Visit ProtonVPN →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(255, 152, 0, 0.08); border-radius: 8px; border-left: 3px solid #ff9800;">
+      <h4 style="margin-top: 0;">Mullvad 🔒 Anonymous</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> ~€5/month flat rate</li>
+        <li><strong>Best for:</strong> Maximum anonymity, no account needed</li>
+        <li><strong>Features:</strong> No account required, no logging, transparent code, built-in ad blocker</li>
+        <li><strong>Platforms:</strong> Windows, macOS, Linux, iOS, Android</li>
+      </ul>
+      <p><a href="https://mullvad.net/" target="_blank" style="color: var(--accent);">Visit Mullvad →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(255, 152, 0, 0.08); border-radius: 8px; border-left: 3px solid #ff9800;">
+      <h4 style="margin-top: 0;">NordVPN 🌍 Largest Network</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> $3.99/month (annual plans)</li>
+        <li><strong>Best for:</strong> Large server network, good for streaming</li>
+        <li><strong>Features:</strong> 5000+ servers, Double VPN, Onion routing, Threat Protection</li>
+        <li><strong>Platforms:</strong> Windows, macOS, Linux, iOS, Android</li>
+      </ul>
+      <p><a href="https://nordvpn.com/" target="_blank" style="color: var(--accent);">Visit NordVPN →</a></p>
+    </div>
+  </section>
+
+  <!-- Email Security -->
+  <section class="card">
+    <h3>📧 Email Security & Privacy</h3>
+    <p style="color: var(--muted); margin-bottom: 20px;">Protect your email with encryption or use alias emails to keep your main address private.</p>
+    
+    <div style="margin: 20px 0; padding: 15px; background: rgba(244, 67, 54, 0.08); border-radius: 8px; border-left: 3px solid #f44336;">
+      <h4 style="margin-top: 0;">ProtonMail 🔐 End-to-End Encryption</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free (with limits) or €12/month for Mail Plus</li>
+        <li><strong>Best for:</strong> Sensitive communications, journalists, activists</li>
+        <li><strong>Features:</strong> End-to-end encryption, no tracking, self-destructing emails, secure password recovery</li>
+      </ul>
+      <p><a href="https://protonmail.com/" target="_blank" style="color: var(--accent);">Visit ProtonMail →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(244, 67, 54, 0.08); border-radius: 8px; border-left: 3px solid #f44336;">
+      <h4 style="margin-top: 0;">Firefox Relay 🦊 Hide Your Email</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free (5 masks) or $0.99/month for Relay Premium (unlimited masks)</li>
+        <li><strong>Best for:</strong> Hiding your real email address from websites</li>
+        <li><strong>Features:</strong> Generate random email aliases, block promotions, integrated with Firefox</li>
+      </ul>
+      <p><a href="https://relay.firefox.com/" target="_blank" style="color: var(--accent);">Visit Firefox Relay →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(244, 67, 54, 0.08); border-radius: 8px; border-left: 3px solid #f44336;">
+      <h4 style="margin-top: 0;">Tutanota 🔒 Privacy by Default</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free or €12/year for premium features</li>
+        <li><strong>Best for:</strong> Privacy-conscious users wanting all emails encrypted by default</li>
+        <li><strong>Features:</strong> Fully encrypted, no ads, GDPR compliant, Swiss-based</li>
+      </ul>
+      <p><a href="https://tutanota.com/" target="_blank" style="color: var(--accent);">Visit Tutanota →</a></p>
+    </div>
+  </section>
+
+  <!-- Browser Security -->
+  <section class="card">
+    <h3>🌐 Browser Extensions & Security</h3>
+    <p style="color: var(--muted); margin-bottom: 20px;">Add extra protection layers to your browser to block trackers, ads, and malicious scripts.</p>
+    
+    <div style="margin: 20px 0; padding: 15px; background: rgba(156, 39, 176, 0.08); border-radius: 8px; border-left: 3px solid #9c27b0;">
+      <h4 style="margin-top: 0;">uBlock Origin 🚫 Ad & Tracker Blocker</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free, open-source</li>
+        <li><strong>Best for:</strong> Blocking ads, scripts, and trackers</li>
+        <li><strong>Available:</strong> Chrome, Firefox, Safari, Edge</li>
+      </ul>
+      <p><a href="https://ublockorigin.com/" target="_blank" style="color: var(--accent);">Visit uBlock Origin →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(156, 39, 176, 0.08); border-radius: 8px; border-left: 3px solid #9c27b0;">
+      <h4 style="margin-top: 0;">Privacy Badger 🦡 Stop Hidden Trackers</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free, open-source by EFF</li>
+        <li><strong>Best for:</strong> Detecting and blocking invisible trackers</li>
+        <li><strong>Available:</strong> Chrome, Firefox, Safari</li>
+      </ul>
+      <p><a href="https://privacybadger.org/" target="_blank" style="color: var(--accent);">Visit Privacy Badger →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(156, 39, 176, 0.08); border-radius: 8px; border-left: 3px solid #9c27b0;">
+      <h4 style="margin-top: 0;">Bitwarden Extension 🔐 Auto-Fill Passwords</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free with Bitwarden account</li>
+        <li><strong>Best for:</strong> Automatically filling passwords from your vault</li>
+        <li><strong>Available:</strong> Chrome, Firefox, Safari, Edge</li>
+      </ul>
+      <p><a href="https://bitwarden.com/download/" target="_blank" style="color: var(--accent);">Visit Bitwarden Extensions →</a></p>
+    </div>
+  </section>
+
+  <!-- Backup & Cloud Storage -->
+  <section class="card">
+    <h3>💾 Backup & Cloud Storage</h3>
+    <p style="color: var(--muted); margin-bottom: 20px;">Protect your files from loss, ransomware, and device failure with regular backups.</p>
+    
+    <div style="margin: 20px 0; padding: 15px; background: rgba(76, 175, 80, 0.08); border-radius: 8px; border-left: 3px solid #4caf50;">
+      <h4 style="margin-top: 0;">Nextcloud ☁️ Self-Hosted Cloud</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Free (self-hosted) or managed hosting from €4/month</li>
+        <li><strong>Best for:</strong> Privacy-conscious users wanting complete control</li>
+        <li><strong>Features:</strong> File sync, calendar, contacts, 2FA, end-to-end encryption available</li>
+      </ul>
+      <p><a href="https://nextcloud.com/" target="_blank" style="color: var(--accent);">Visit Nextcloud →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(76, 175, 80, 0.08); border-radius: 8px; border-left: 3px solid #4caf50;">
+      <h4 style="margin-top: 0;">Backblaze ☁️ Unlimited Cloud Backup</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> $9/month for unlimited backup</li>
+        <li><strong>Best for:</strong> Continuous automatic backup of entire computer</li>
+        <li><strong>Features:</strong> Unlimited storage, file versioning, remote file access</li>
+      </ul>
+      <p><a href="https://www.backblaze.com/" target="_blank" style="color: var(--accent);">Visit Backblaze →</a></p>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(76, 175, 80, 0.08); border-radius: 8px; border-left: 3px solid #4caf50;">
+      <h4 style="margin-top: 0;">Duplicati 💿 Free Open-Source Backup</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Cost:</strong> Completely free, open-source</li>
+        <li><strong>Best for:</strong> Advanced users who want flexible backup options</li>
+        <li><strong>Features:</strong> Scheduled backups, encryption, cloud storage integration</li>
+      </ul>
+      <p><a href="https://www.duplicati.com/" target="_blank" style="color: var(--accent);">Visit Duplicati →</a></p>
+    </div>
+  </section>
+
+  <!-- Additional Tools -->
+  <section class="card">
+    <h3>🔧 Additional Security Tools</h3>
+    
+    <div style="margin: 20px 0; padding: 15px; background: rgba(33, 150, 243, 0.08); border-radius: 8px; border-left: 3px solid #2196f3;">
+      <h4 style="margin-top: 0;">Antivirus & Malware Protection</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Windows Defender:</strong> Built-in, free, adequate for most users</li>
+        <li><strong>Malwarebytes:</strong> Free malware scanner, excellent at catching infections</li>
+        <li><strong>Kaspersky:</strong> Premium antivirus, excellent protection, ~€30/year</li>
+        <li><strong>Norton 360:</strong> Comprehensive protection, VPN included, ~€50/year</li>
+      </ul>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(33, 150, 243, 0.08); border-radius: 8px; border-left: 3px solid #2196f3;">
+      <h4 style="margin-top: 0;">Password & Data Breach Checker</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>Have I Been Pwned:</strong> <a href="https://haveibeenpwned.com/" target="_blank" style="color: var(--accent);">Check if your password was in a breach →</a></li>
+        <li><strong>Bitwarden Password Generator:</strong> Create strong passwords on the fly</li>
+        <li><strong>Firefox Monitor:</strong> Alerts when your email is in a data breach</li>
+      </ul>
+    </div>
+
+    <div style="margin: 20px 0; padding: 15px; background: rgba(33, 150, 243, 0.08); border-radius: 8px; border-left: 3px solid #2196f3;">
+      <h4 style="margin-top: 0;">Encryption Tools</h4>
+      <ul class="list" style="margin: 10px 0;">
+        <li><strong>VeraCrypt:</strong> Free disk encryption software (based on TrueCrypt)</li>
+        <li><strong>BitLocker:</strong> Built-in Windows encryption (Windows Pro/Enterprise)</li>
+        <li><strong>FileVault:</strong> macOS built-in encryption</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Recommended Setup -->
+  <section class="card" style="background: rgba(155, 255, 178, 0.08); border-left: 4px solid var(--accent2); margin-bottom: 40px;">
+    <h3 style="margin-top: 0;">🎯 Recommended Starter Security Stack</h3>
+    <p style="color: var(--muted); margin: 15px 0;">If you're just getting started, here's a budget-friendly setup that covers the essentials:</p>
+    <table style="width: 100%; color: var(--text); margin: 20px 0;">
+      <tr style="border-bottom: 1px solid var(--border);">
+        <td style="padding: 10px;"><strong>Category</strong></td>
+        <td style="padding: 10px;"><strong>Recommended Tool</strong></td>
+        <td style="padding: 10px;"><strong>Cost</strong></td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+        <td style="padding: 10px;">Password Manager</td>
+        <td style="padding: 10px;">Bitwarden Free</td>
+        <td style="padding: 10px;">$0/year</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--border);">
+        <td style="padding: 10px;">2FA App</td>
+        <td style="padding: 10px;">Google Authenticator or Authy</td>
+        <td style="padding: 10px;">$0/year</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+        <td style="padding: 10px;">VPN</td>
+        <td style="padding: 10px;">ProtonVPN Free (or Mullvad at €5/month)</td>
+        <td style="padding: 10px;">$0-60/year</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--border);">
+        <td style="padding: 10px;">Browser Extensions</td>
+        <td style="padding: 10px;">uBlock Origin + Privacy Badger</td>
+        <td style="padding: 10px;">$0/year</td>
+      </tr>
+      <tr style="background: rgba(255,255,255,0.02);">
+        <td style="padding: 10px;">Backup</td>
+        <td style="padding: 10px;">Duplicati (free) or cloud storage</td>
+        <td style="padding: 10px;">$0-60/year</td>
+      </tr>
+    </table>
+    <p style="color: var(--muted); margin-top: 15px;"><strong>Total cost:</strong> $0-120/year for excellent security!</p>
+  </section>
+
+  <div class="notice" style="background: rgba(244, 67, 54, 0.1); border-left: 4px solid #f44336; padding: 20px; border-radius: 8px; margin: 40px 0;">
+    <p style="margin: 0; font-size: 16px;"><strong>⚠️ Safety Reminder:</strong> Always download tools from official websites or verified app stores. Never pay for "free" security tools or fall for fake security alerts. If a website claims to have free versions of paid software (cracks), it's likely malware.</p>
+  </div>
+
+  <div class="footer">
+    <hr class="sep" />
+    <strong>Alpha Unit</strong> – Trusted Cybersecurity Awareness & Education Platform. Last Updated: January 2026.
+  </div>
+</main>
+
+<!-- Goat Assistant AI -->
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<div class="goat-panel" id="goatPanel" aria-live="polite">
+  <div class="goat-head">
+    <strong>🐐 Goat Assistant AI</strong>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+  </div>
+  <div class="goat-chat" id="goatChat"></div>
+  <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
+</div>
+
+<script src="js/accessibility.js/accessibility.js"></script>
+<script src="js/search.js/search.js"></script>
+<script src="js/assistant.js/assistant.js"></script>
+
+</body>
+</html>
+
+
+

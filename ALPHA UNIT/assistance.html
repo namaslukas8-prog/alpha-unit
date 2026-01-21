@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpha Unit | Assistance</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Alpha Unit</span>
+      <span class="badge">Assistance</span>
+    </div>
+
+    <div class="header-tools">
+      <div class="a11y-bar">
+        <button class="a11y-btn size-btn" id="btnDec" type="button" title="Decrease font size">A−</button>
+        <button class="a11y-btn size-btn" id="btnInc" type="button" title="Increase font size">A+</button>
+        <div class="a11y-separator"></div>
+        <button class="a11y-btn theme-btn" id="btnHC" type="button" title="Toggle high contrast mode">☀️</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="spot.html">Spot</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="risk.html">Risk Check</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="checklist.html">Checklist</a></li>
+          <li><a class="active" href="assistance.html">Assistance</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>I Think I've Been Hacked — What Do I Do?</h1>
+    <p>
+      If you suspect your account or device has been compromised, take action immediately.
+      Follow these steps to limit damage and regain control.
+    </p>
+  </section>
+
+  <hr class="sep" />
+
+  <!-- Quick Info Cards -->
+  <section class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-bottom: 40px;">
+    <div class="card" style="text-align: center; background: rgba(244, 67, 54, 0.08);">
+      <h3 style="margin-top: 0; font-size: 24px;">⏰</h3>
+      <p style="color: var(--muted); margin: 0; font-size: 14px;"><strong>Act in First 24 Hours</strong><br>Minimize damage</p>
+    </div>
+    <div class="card" style="text-align: center; background: rgba(102, 227, 255, 0.08);">
+      <h3 style="margin-top: 0; font-size: 24px;">📞</h3>
+      <p style="color: var(--muted); margin: 0; font-size: 14px;"><strong>Contact Authorities</strong><br>Police & banks</p>
+    </div>
+    <div class="card" style="text-align: center; background: rgba(155, 255, 178, 0.08);">
+      <h3 style="margin-top: 0; font-size: 24px;">🔐</h3>
+      <p style="color: var(--muted); margin: 0; font-size: 14px;"><strong>Change Passwords</strong><br>From clean device</p>
+    </div>
+    <div class="card" style="text-align: center; background: rgba(255, 152, 0, 0.08);">
+      <h3 style="margin-top: 0; font-size: 24px;">✅</h3>
+      <p style="color: var(--muted); margin: 0; font-size: 14px;"><strong>Enable MFA</strong><br>On all accounts</p>
+    </div>
+  </section>
+
+  <!-- SECTION 1: IMMEDIATE ACTIONS -->
+  <div class="card" style="border-left: 4px solid var(--danger); margin-bottom: 30px;">
+    <h3 style="margin-top: 0;">🚨 Immediate Actions (Right Now - Next 30 Minutes)</h3>
+    <p style="color: var(--muted); margin-bottom: 15px;"><strong>These steps minimize damage and prevent further compromise</strong></p>
+    
+    <div style="background: rgba(244, 67, 54, 0.05); padding: 15px; border-radius: 8px;">
+      <div style="margin: 15px 0;">
+        <h4 style="margin: 8px 0; color: var(--danger);">Step 1: Stay Calm & Assess</h4>
+        <ul class="list" style="margin: 10px 0;">
+          <li>Panic leads to poor decisions. You <strong>can</strong> recover from this</li>
+          <li>Determine what was compromised: Email? Banking? Social media? Device?</li>
+          <li>Write down what happened and when you noticed it (for police reports later)</li>
+        </ul>
+      </div>
+
+      <div style="margin: 15px 0;">
+        <h4 style="margin: 8px 0; color: var(--danger);">Step 2: Disconnect Compromised Device (if malware suspected)</h4>
+        <ul class="list" style="margin: 10px 0;">
+          <li>Unplug Ethernet cable or turn off Wi-Fi immediately</li>
+          <li>Do NOT use this device for sensitive tasks (banking, email passwords) until cleaned</li>
+          <li>Continue recovery steps from a <strong>different, trusted device</strong> (phone, laptop, friend's computer)</li>
+        </ul>
+      </div>
+
+      <div style="margin: 15px 0;">
+        <h4 style="margin: 8px 0; color: var(--danger);">Step 3: Change Password from Different Device</h4>
+        <ul class="list" style="margin: 10px 0;">
+          <li>Use your phone or another computer to change your password</li>
+          <li><strong>NEVER</strong> change password on the potentially compromised device</li>
+          <li>Create a new password that's 16+ characters with mixed case, numbers, symbols</li>
+          <li>Example strong password: <code style="background: rgba(0,0,0,0.1); padding: 2px 6px; border-radius: 3px;">P@ssw0rd#2024!Safe</code></li>
+        </ul>
+      </div>
+
+      <div style="margin: 15px 0;">
+        <h4 style="margin: 8px 0; color: var(--danger);">Step 4: Enable/Verify MFA (Two-Factor Authentication)</h4>
+        <ul class="list" style="margin: 10px 0;">
+          <li>Turn on 2FA immediately to prevent attackers from logging back in with old credentials</li>
+          <li><strong>Authenticator app (BEST):</strong> Google Authenticator, Authy, Microsoft Authenticator</li>
+          <li><strong>Text message (OKAY):</strong> Works but vulnerable to SIM swapping</li>
+          <li>Keep backup codes somewhere safe (locked drawer, password manager)</li>
+        </ul>
+      </div>
+
+      <div style="margin: 15px 0;">
+        <h4 style="margin: 8px 0; color: var(--danger);">Step 5: Review Account Activity</h4>
+        <ul class="list" style="margin: 10px 0;">
+          <li>Check login history for unrecognized locations or times</li>
+          <li>Verify recovery email and phone number haven't been changed</li>
+          <li>Remove any connected apps or devices you don't recognize</li>
+          <li>Note any suspicious activity for your police report</li>
+        </ul>
+      </div>
+
+      <div style="margin: 15px 0; padding: 12px; background: rgba(244, 67, 54, 0.1); border-left: 3px solid var(--danger); border-radius: 4px;">
+        <p style="margin: 0;"><strong>⚠️ Special Case:</strong> If you suspect <strong>bank account fraud</strong>, skip ahead to the "Banking Compromise" section and call your bank immediately. Don't wait to complete all these steps.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 2: SCENARIO-SPECIFIC GUIDES -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="margin: 30px 0 20px 0;">📋 Detailed Recovery Guides by Scenario</h2>
+
+    <!-- Email Compromise -->
+    <div class="card" style="border-left: 4px solid var(--accent); margin-bottom: 20px;">
+      <h3 style="margin-top: 0;">📧 Email Account Compromised (Gmail, Outlook, Yahoo)</h3>
+      <p style="color: var(--muted); margin-bottom: 15px;"><strong>Email is your "master key" — compromise here affects all other accounts</strong></p>
+      
+      <details>
+        <summary style="cursor: pointer; color: var(--accent); font-weight: bold; margin-bottom: 15px;">
+          Full Recovery Steps →
+        </summary>
+        
+        <div style="margin-top: 15px; padding: 15px; background: rgba(102, 227, 255, 0.05); border-radius: 8px;">
+          <h4>Phase 1: Regain Access (0-2 hours)</h4>
+          <ol class="list">
+            <li><strong>Change password immediately</strong> (from different device)
+              <ul class="list" style="margin-top: 8px;">
+                <li>Gmail: accounts.google.com/signin/recovery</li>
+                <li>Outlook: account.live.com/password/reset</li>
+                <li>Yahoo: login.yahoo.com → Account Recovery</li>
+              </ul>
+            </li>
+            <li><strong>Verify recovery email and phone</strong> — Attacker may have changed these
+              <ul class="list" style="margin-top: 8px;">
+                <li>Go to Account Settings → Security</li>
+                <li>Confirm your recovery email address is still yours</li>
+                <li>Confirm recovery phone number is still yours</li>
+                <li>Change if they've been altered</li>
+              </ul>
+            </li>
+            <li><strong>Review connected devices and apps</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Gmail: Security → Your devices</li>
+                <li>Outlook: Security → Device management</li>
+                <li>Log out from unknown locations (especially countries you don't live in)</li>
+              </ul>
+            </li>
+            <li><strong>Remove suspicious third-party apps</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Gmail: Apps with access to your account</li>
+                <li>Outlook: Apps & Services</li>
+                <li>Remove anything unfamiliar</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Phase 2: Secure the Account (2-4 hours)</h4>
+          <ol class="list">
+            <li><strong>Enable 2-Step Verification / MFA</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Gmail: Security → 2-Step Verification → Setup</li>
+                <li>Outlook: Security settings → Advanced security options</li>
+                <li>Use authenticator app (not SMS if possible)</li>
+              </ul>
+            </li>
+            <li><strong>Create and save backup codes</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Write them down and keep in a safe location</li>
+                <li>Or save in password manager (Bitwarden)</li>
+                <li>These codes let you access account if phone is lost</li>
+              </ul>
+            </li>
+            <li><strong>Review and delete recent emails from sensitive accounts</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Attacker may have accessed password reset emails</li>
+                <li>Look for password changes to banking, crypto, social media accounts</li>
+              </ul>
+            </li>
+            <li><strong>Check email forwarding rules</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Settings → Forwarding & POP/IMAP</li>
+                <li>Attacker may forward your emails to their address</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Phase 3: Protect Other Accounts (4-8 hours)</h4>
+          <ol class="list">
+            <li><strong>Change passwords on ALL accounts using this email</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Banking, cryptocurrency, social media, streaming</li>
+                <li>Password manager (Bitwarden) can help track this</li>
+              </ul>
+            </li>
+            <li><strong>Enable 2FA on critical accounts</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Priority: Banking, email, crypto, PayPal</li>
+                <li>Secondary: Social media, cloud storage</li>
+              </ul>
+            </li>
+            <li><strong>Check for unauthorized account signups</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Google: myaccount.google.com → Personal info → Check your accounts</li>
+                <li>Look for new accounts you didn't create</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Warning Signs to Watch For</h4>
+          <ul class="list">
+            <li>New devices appearing in account activity</li>
+            <li>Password reset emails you didn't request</li>
+            <li>Emails forwarding to unknown addresses</li>
+            <li>Recovery email/phone changed without your action</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <!-- Banking Compromise -->
+    <div class="card" style="border-left: 4px solid var(--danger); margin-bottom: 20px;">
+      <h3 style="margin-top: 0;">🏦 Banking or Financial Account Compromised</h3>
+      <p style="color: var(--muted); margin-bottom: 15px;"><strong>This requires immediate action — financial fraud spreads quickly</strong></p>
+      
+      <details>
+        <summary style="cursor: pointer; color: var(--danger); font-weight: bold; margin-bottom: 15px;">
+          Full Recovery Steps →
+        </summary>
+        
+        <div style="margin-top: 15px; padding: 15px; background: rgba(244, 67, 54, 0.05); border-radius: 8px;">
+          <h4 style="color: var(--danger);">⏰ Within 1 Hour — URGENT</h4>
+          <ol class="list">
+            <li><strong>Call your bank IMMEDIATELY</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Use the number on the back of your card or statement</li>
+                <li>NOT a number from an email or webpage</li>
+                <li>Banks have 24/7 fraud lines — be prepared to wait on hold</li>
+              </ul>
+            </li>
+            <li><strong>Report the compromise</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Explain what was accessed (account login, transfers, card info)</li>
+                <li>Ask what fraud has already occurred</li>
+              </ul>
+            </li>
+            <li><strong>Request fraud block on your account</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Temporarily freezes account (24-48 hours)</li>
+                <li>Prevents further transfers or withdrawals</li>
+              </ul>
+            </li>
+            <li><strong>Freeze or cancel compromised cards</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Bank will issue replacement cards (usually within 5-7 days)</li>
+                <li>Update recurring payments with new card numbers</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Within 24 Hours</h4>
+          <ol class="list">
+            <li><strong>Review ALL recent transactions</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Mark unauthorized transactions as fraud</li>
+                <li>Bank typically reverses these within 10 business days</li>
+              </ul>
+            </li>
+            <li><strong>Request fraud alert with credit bureaus</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li><a href="https://www.equifax.co.uk" target="_blank" style="color: var(--accent);">Equifax.co.uk</a></li>
+                <li><a href="https://www.experian.co.uk" target="_blank" style="color: var(--accent);">Experian.co.uk</a></li>
+                <li><a href="https://www.transunion.co.uk" target="_blank" style="color: var(--accent);">TransUnion.co.uk</a></li>
+                <li>This prevents fraudsters from opening new accounts in your name</li>
+              </ul>
+            </li>
+            <li><strong>File police report</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>UK: <a href="https://www.actionfraud.police.uk" target="_blank" style="color: var(--accent);">Action Fraud</a> (0300 123 2040)</li>
+                <li>Needed for insurance claims and bank dispute processes</li>
+              </ul>
+            </li>
+            <li><strong>Change online banking password</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Use strong password (16+ characters)</li>
+                <li>Enable 2FA if available</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Within 1 Week</h4>
+          <ol class="list">
+            <li><strong>Check credit reports for fraudulent accounts</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Look for credit cards, loans, mortgages you didn't apply for</li>
+                <li>Dispute any fraudulent accounts immediately</li>
+              </ul>
+            </li>
+            <li><strong>Monitor accounts daily for 3 months</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Set phone/email alerts for all transactions</li>
+                <li>Watch for suspicious activity</li>
+              </ul>
+            </li>
+            <li><strong>Consider credit freeze</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Prevents new accounts in your name</li>
+                <li>Lasts 3 years (renewable)</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Compensation & Recovery Timeline</h4>
+          <ul class="list">
+            <li><strong>Fraudulent transfers:</strong> Usually refunded within 10 business days</li>
+            <li><strong>Disputed charges:</strong> Investigation takes 30-60 days</li>
+            <li><strong>Card fraud:</strong> Usually zero liability with new card issued</li>
+            <li><strong>Overall recovery:</strong> 1-3 months from fraud date</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <!-- Device Malware -->
+    <div class="card" style="border-left: 4px solid #ff9800; margin-bottom: 20px;">
+      <h3 style="margin-top: 0;">💻 Computer or Phone Infected with Malware</h3>
+      <p style="color: var(--muted); margin-bottom: 15px;"><strong>Malware can capture passwords, steal data, and spread to other devices</strong></p>
+      
+      <details>
+        <summary style="cursor: pointer; color: #ff9800; font-weight: bold; margin-bottom: 15px;">
+          Full Cleaning Steps →
+        </summary>
+        
+        <div style="margin-top: 15px; padding: 15px; background: rgba(255, 152, 0, 0.05); border-radius: 8px;">
+          <h4>Step 1: Isolate the Device (Immediate)</h4>
+          <ol class="list">
+            <li>Unplug Ethernet or turn OFF Wi-Fi</li>
+            <li>Disconnect from any networks to prevent spread</li>
+            <li>Do NOT use for passwords, banking, or sensitive data</li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Step 2: Boot into Safe Mode</h4>
+          <ul class="list" style="margin: 10px 0;">
+            <li><strong>Windows:</strong> Restart → Press F8 repeatedly → Safe Mode with Networking</li>
+            <li><strong>Mac:</strong> Restart → Hold Shift → Login (Safe Boot)</li>
+            <li>Safe Mode disables most programs, making malware removal easier</li>
+          </ul>
+
+          <h4 style="margin-top: 20px;">Step 3: Scan with Antivirus/Anti-Malware</h4>
+          <ol class="list">
+            <li><strong>Malwarebytes (RECOMMENDED)</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Download from <a href="https://www.malwarebytes.com" target="_blank" style="color: var(--accent);">Malwarebytes.com</a> on a clean device</li>
+                <li>Transfer via USB to infected device</li>
+                <li>Run FULL scan (takes 1-2 hours)</li>
+              </ul>
+            </li>
+            <li><strong>Windows Defender (Built-in)</strong>
+              <ul class="list" style="margin-top: 8px;">
+                <li>Settings → Update & Security → Virus & threat protection</li>
+                <li>Run full scan option</li>
+              </ul>
+            </li>
+            <li><strong>Let scans complete fully</strong> — Don't interrupt or restart</li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Step 4: Remove Detected Threats</h4>
+          <ul class="list" style="margin: 10px 0;">
+            <li>Quarantine all detected malware</li>
+            <li>Follow software recommendations for removal</li>
+            <li>If malware persists after 2 scans, consider full device reset</li>
+          </ul>
+
+          <h4 style="margin-top: 20px;">Step 5: Update and Protect</h4>
+          <ol class="list">
+            <li>Update operating system (Windows Update, macOS updates)</li>
+            <li>Update all software (browser, Office, etc.)</li>
+            <li>Enable automatic updates going forward</li>
+            <li>Install/enable firewall (usually on by default)</li>
+            <li>Install ad blocker (uBlock Origin browser extension)</li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Step 6: Change All Passwords (from clean device!)</h4>
+          <ul class="list" style="margin: 10px 0;">
+            <li>Do NOT change passwords on the infected device</li>
+            <li>Use different device to change all passwords</li>
+            <li>Change especially: Email, banking, social media, cryptocurrency</li>
+          </ul>
+
+          <h4 style="margin-top: 20px;">When to Do a Full Reset</h4>
+          <p style="margin-bottom: 10px;">If malware persists after 2 full scans, consider factory reset:</p>
+          <ul class="list">
+            <li><strong>Windows:</strong> Settings → System → Recovery → Reset this PC</li>
+            <li><strong>Mac:</strong> Erase Mac and reinstall macOS</li>
+            <li>Backup clean files first (to external drive)</li>
+            <li>This removes all malware but wipes the device clean</li>
+          </ul>
+
+          <h4 style="margin-top: 20px;">For Mobile (iPhone/Android)</h4>
+          <ul class="list">
+            <li><strong>If suspected malware:</strong> Backup to cloud, then factory reset</li>
+            <li><strong>For compromised accounts:</strong> Change password, enable 2FA, review active sessions</li>
+            <li>Remove suspicious apps from App Store / Google Play</li>
+            <li>Update all apps and enable automatic updates</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <!-- Social Media Compromise -->
+    <div class="card" style="border-left: 4px solid var(--accent2); margin-bottom: 20px;">
+      <h3 style="margin-top: 0;">📱 Social Media Account Compromised</h3>
+      <p style="color: var(--muted); margin-bottom: 15px;"><strong>Attackers may impersonate you, scam friends, or damage your reputation</strong></p>
+      
+      <details>
+        <summary style="cursor: pointer; color: var(--accent2); font-weight: bold; margin-bottom: 15px;">
+          Full Recovery Steps →
+        </summary>
+        
+        <div style="margin-top: 15px; padding: 15px; background: rgba(102, 227, 255, 0.05); border-radius: 8px;">
+          <h4>Facebook / Instagram Compromise</h4>
+          <ol class="list">
+            <li>Go to <a href="https://www.facebook.com" target="_blank" style="color: var(--accent);">Facebook.com</a> → Can't access account?</li>
+            <li>Go through account recovery process with email or phone</li>
+            <li>Change password to something new and strong</li>
+            <li>Review recent login activity (Settings → Security and Login)</li>
+            <li>Log out all other sessions (click "Log out everywhere")</li>
+            <li>Go through security checkup: facebook.com/security</li>
+            <li>Remove suspicious apps from "Apps and Websites"</li>
+            <li>Enable 2FA with authenticator app</li>
+            <li>Review tagged photos/posts and untag yourself if needed</li>
+            <li>Warn friends if scams were posted in your name</li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">Twitter / X Compromise</h4>
+          <ol class="list">
+            <li>Go to <a href="https://twitter.com" target="_blank" style="color: var(--accent);">Twitter.com</a> → Forgot password</li>
+            <li>Reset password via email</li>
+            <li>Settings → Security and account access → Sessions</li>
+            <li>Logout all other sessions</li>
+            <li>Settings → Security and account access → Apps and Sessions</li>
+            <li>Remove authorization for suspicious apps</li>
+            <li>Enable 2FA (Settings → Security)</li>
+            <li>Delete any embarrassing tweets from while hacked</li>
+          </ol>
+
+          <h4 style="margin-top: 20px;">General Steps for All Social Media</h4>
+          <ul class="list">
+            <li>Change password immediately</li>
+            <li>Remove connected apps and integrations</li>
+            <li>Review and delete posts made while compromised</li>
+            <li>Enable 2FA</li>
+            <li>Check "Who can message me?" and tighten privacy</li>
+            <li>Set profile to private temporarily</li>
+            <li>Notify close friends/followers that account was hacked</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PREVENTION GOING FORWARD -->
+  <div class="card" style="border-left: 4px solid var(--accent2); margin-bottom: 30px;">
+    <h3 style="margin-top: 0;">✅ How to Prevent Future Compromises</h3>
+    <p style="color: var(--muted); margin-bottom: 15px;"><strong>After recovery, implement these protections to avoid being hacked again</strong></p>
+
+    <div style="background: rgba(155, 255, 178, 0.05); padding: 15px; border-radius: 8px;">
+      <h4>Account Security</h4>
+      <ul class="list">
+        <li><strong>Use unique passwords for every account</strong> — Password manager (Bitwarden) makes this easy</li>
+        <li><strong>Enable MFA on all critical accounts</strong> — Email, banking, social media, crypto</li>
+        <li><strong>Use authenticator apps (not SMS) for 2FA</strong> — More secure against SIM swapping</li>
+        <li><strong>Save recovery codes offline</strong> — In case you lose access to your authenticator</li>
+        <li><strong>Monitor for breaches</strong> — Check <a href="https://haveibeenpwned.com" target="_blank" style="color: var(--accent);">Have I Been Pwned</a> quarterly</li>
+      </ul>
+
+      <h4 style="margin-top: 20px;">Email Security</h4>
+      <ul class="list">
+        <li><strong>Check for unauthorized forwarding</strong> — Monthly in Settings</li>
+        <li><strong>Review connected apps</strong> — Remove anything unfamiliar</li>
+        <li><strong>Never click links in emails</strong> — Type URLs directly or use bookmarks</li>
+        <li><strong>Verify sender domains</strong> — Hover to see full email address</li>
+      </ul>
+
+      <h4 style="margin-top: 20px;">Device Security</h4>
+      <ul class="list">
+        <li><strong>Enable automatic updates</strong> — OS, browser, apps</li>
+        <li><strong>Use antivirus software</strong> — Windows Defender (built-in) or Malwarebytes</li>
+        <li><strong>Install ad/pop-up blocker</strong> — uBlock Origin browser extension</li>
+        <li><strong>Enable firewall</strong> — Usually on by default</li>
+        <li><strong>Regular backups</strong> — Weekly to external drive, kept offline</li>
+      </ul>
+
+      <h4 style="margin-top: 20px;">Browsing Habits</h4>
+      <ul class="list">
+        <li><strong>Use VPN on public Wi-Fi</strong> — ProtonVPN, Mullvad, or NordVPN</li>
+        <li><strong>Check for HTTPS padlock</strong> — Especially on banking/payment sites</li>
+        <li><strong>Don't use public computers for sensitive tasks</strong></li>
+        <li><strong>Clear browser cache/cookies regularly</strong> — Or use privacy mode</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 4: CONTACTS & RESOURCES -->
+  <div class="card" style="background: rgba(155, 255, 178, 0.08); border-left: 4px solid var(--accent2); margin-bottom: 30px;">
+    <h3 style="margin-top: 0;">📞 Important Contact Numbers & Resources</h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+      <div style="padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+        <h4 style="margin-top: 0;">🇬🇧 UK Authorities</h4>
+        <ul class="list" style="padding-left: 15px;">
+          <li><strong>Action Fraud</strong><br>Report fraud: <a href="https://www.actionfraud.police.uk" target="_blank" style="color: var(--accent);">actionfraud.police.uk</a><br>Phone: 0300 123 2040</li>
+          <li><strong>National Cyber Security Centre</strong><br><a href="https://www.ncsc.gov.uk" target="_blank" style="color: var(--accent);">ncsc.gov.uk</a></li>
+          <li><strong>Get Safe Online</strong><br><a href="https://www.getsafeonline.org" target="_blank" style="color: var(--accent);">getsafeonline.org</a><br>Expert advice & support</li>
+          <li><strong>Citizen Advice</strong><br><a href="https://www.citizensadvice.org.uk" target="_blank" style="color: var(--accent);">citizensadvice.org.uk</a><br>Support for scam victims</li>
+        </ul>
+      </div>
+
+      <div style="padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+        <h4 style="margin-top: 0;">🇺🇸 US Authorities</h4>
+        <ul class="list" style="padding-left: 15px;">
+          <li><strong>FBI IC3</strong><br>Internet Crime: <a href="https://www.ic3.gov" target="_blank" style="color: var(--accent);">ic3.gov</a></li>
+          <li><strong>FTC</strong><br>Identity Theft: <a href="https://identitytheft.gov" target="_blank" style="color: var(--accent);">identitytheft.gov</a></li>
+          <li><strong>Federal Reserve</strong><br>Banking issues: <a href="https://www.federalreserve.gov" target="_blank" style="color: var(--accent);">federalreserve.gov</a></li>
+        </ul>
+      </div>
+
+      <div style="padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+        <h4 style="margin-top: 0;">🌍 International</h4>
+        <ul class="list" style="padding-left: 15px;">
+          <li><strong>Have I Been Pwned</strong><br>Check for breaches: <a href="https://haveibeenpwned.com" target="_blank" style="color: var(--accent);">haveibeenpwned.com</a></li>
+          <li><strong>Internet Watch Foundation</strong><br>Report illegal content: <a href="https://www.iwf.org.uk" target="_blank" style="color: var(--accent);">iwf.org.uk</a></li>
+          <li><strong>Mozilla Monitor</strong><br>Track breaches: <a href="https://monitor.mozilla.org" target="_blank" style="color: var(--accent);">monitor.mozilla.org</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINAL NOTICE -->
+  <div class="notice" style="background: rgba(244, 67, 54, 0.1); border-left: 4px solid var(--danger); padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+    <p style="margin: 0;"><strong>⏰ Remember:</strong> The first 24 hours are critical. Act quickly, stay organized, and don't hesitate to contact authorities. Recovery is possible, but speed is essential. Write down everything (dates, amounts, account details) for police reports and insurance claims.</p>
+  </div>
+
+  <div class="footer">
+    <hr class="sep" />
+    <strong>Alpha Unit</strong> – Trusted Cybersecurity Awareness & Education Platform. Last Updated: January 2026.
+  </div>
+</main>
+
+<!-- Goat Assistant AI -->
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<div class="goat-panel" id="goatPanel" aria-live="polite">
+  <div class="goat-head">
+    <strong>🐐 Goat Assistant AI</strong>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+  </div>
+  <div class="goat-chat" id="goatChat"></div>
+  <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
+</div>
+
+<script src="js/accessibility.js/accessibility.js"></script>
+<script src="js/search.js/search.js"></script>
+<script src="js/assistant.js/assistant.js"></script>
+
+</body>
+</html>
+
+
+
