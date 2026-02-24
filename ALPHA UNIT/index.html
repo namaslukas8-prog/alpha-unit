@@ -1,10 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta name="description" content="Alpha Unit is a cybersecurity awareness platform with practical guides, quizzes, and tools to help you stay safe online." />
+    <meta name="keywords" content="cybersecurity, awareness, phishing, password, MFA, scam, online safety, Alpha Unit" />
+    <meta property="og:title" content="Alpha Unit | Cyber Security Awareness" />
+    <meta property="og:description" content="Practical cybersecurity guides, quizzes, and tools for everyone." />
+    <meta property="og:image" content="images/goat.png" />
+    <meta property="og:type" content="website" />
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Alpha Unit | Cyber Security Awareness</title>
+  <link rel="icon" href="images/goat.png" type="image/png" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/admin.js" defer></script>
 </head>
 <body>
 
@@ -34,6 +43,7 @@
           <li><a href="checklist.html">Checklist</a></li>
           <li><a href="assistance.html">Assistance</a></li>
           <li><a href="resources.html">Resources</a></li>
+          <li><a href="reviewsuggestions.html">Reviews & Suggestions</a></li>
         </ul>
       </nav>
     </div>
@@ -58,31 +68,33 @@
     </div>
   </section>
 
+
+
   <hr class="sep" />
+
+
 
   <!-- ABOUT SECTION -->
   <section style="margin-bottom: 40px; padding: 30px; background: rgba(102, 227, 255, 0.05); border-radius: 12px; border-left: 4px solid var(--accent);">
     <h2 style="color: var(--accent); margin-top: 0;">About Alpha Unit</h2>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: start;">
-      <div>
-        <h3 style="margin-top: 0;">What Is This Website?</h3>
-        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 15px;">
-          Alpha Unit is an educational cybersecurity awareness platform created to help individuals and organizations understand and defend against common cyber threats. We focus on practical, actionable guidance rather than technical jargon.
-        </p>
-        <p style="color: var(--muted); line-height: 1.8;">
-          This website provides <strong>trusted, evidence-based cybersecurity guidance</strong>, delivering legitimate, factual information about cybersecurity best practices, real-world threats, and recovery procedures. No personal data is collected.
-        </p>
-      </div>
-      <div style="padding: 20px; background: rgba(155, 255, 178, 0.1); border-radius: 8px; border-left: 4px solid var(--accent2);">
-        <h3 style="margin-top: 0;">Who Is This For?</h3>
-        <ul style="margin: 0; padding-left: 20px;">
-          <li> <strong>Home Users:</strong> Protect your personal accounts and devices</li>
-          <li> <strong>Small Business:</strong> Secure your organization and employees</li>
-          <li> <strong>Students:</strong> Learn cybersecurity fundamentals</li>
-          <li> <strong>Educators:</strong> Use our guides in training programs</li>
-          <li> <strong>Anyone Online:</strong> Everyone needs basic cyber awareness</li>
-        </ul>
-      </div>
+    <div class="about-panel" style="margin-bottom: 22px; padding: 22px; background: rgba(18,22,28,0.98); border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+      <h3 style="margin-top: 0;">What Is This Website?</h3>
+      <p style="color: var(--muted); line-height: 1.8; margin-bottom: 15px;">
+        Alpha Unit is an educational cybersecurity awareness platform created to help individuals and organizations understand and defend against common cyber threats. We focus on practical, actionable guidance rather than technical jargon.
+      </p>
+      <p style="color: var(--muted); line-height: 1.8;">
+        This website provides <strong>trusted, evidence-based cybersecurity guidance</strong>, delivering legitimate, factual information about cybersecurity best practices, real-world threats, and recovery procedures. No personal data is collected.
+      </p>
+    </div>
+    <div class="about-panel" style="padding: 22px; background: rgba(155, 255, 178, 0.10); border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-left: 4px solid var(--accent2);">
+      <h3 style="margin-top: 0;">Who Is This For?</h3>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li> <strong>Home Users:</strong> Protect your personal accounts and devices</li>
+        <li> <strong>Small Business:</strong> Secure your organization and employees</li>
+        <li> <strong>Students:</strong> Learn cybersecurity fundamentals</li>
+        <li> <strong>Educators:</strong> Use our guides in training programs</li>
+        <li> <strong>Anyone Online:</strong> Everyone needs basic cyber awareness</li>
+      </ul>
     </div>
   </section>
 
@@ -235,6 +247,13 @@
   </div>
 
   <div class="footer">
+      <!-- Privacy Policy in Footer -->
+      <section class="card" style="margin: 30px auto; max-width: 600px; background: #181818; color: #e8eefc; border-radius: 12px; border: 1px solid var(--border); padding: 18px;">
+        <h3 style="color: var(--accent); margin-top: 0;">Privacy Policy</h3>
+        <p>This website does not collect personal data. Reviews and suggestions are stored locally in your browser and are not shared or sold. No cookies are used for tracking or advertising.</p>
+        <h4 style="color: var(--accent2); margin-top: 18px;">Cookie Notice</h4>
+        <p>We use localStorage to save your reviews and suggestions for your convenience. No cookies are used for tracking or analytics.</p>
+      </section>
     <hr class="sep" />
     <div style="padding: 20px 0;">
       <p style="margin: 10px 0; color: var(--muted);">
@@ -249,23 +268,170 @@
 </main>
 
 <!-- Goat Assistant AI -->
-<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant">🐐</button>
+<button class="goat-fab" id="goatFab" aria-label="Open Goat Assistant" tabindex="0" title="Ask the Goat Assistant">
+  <span class="goat-emoji" aria-hidden="true">🐐</span>
+  <span class="goat-tooltip">Ask the Goat Assistant</span>
+</button>
 <div class="goat-panel" id="goatPanel" aria-live="polite">
   <div class="goat-head">
     <strong>🐐 Goat Assistant AI</strong>
-    <button class="close-btn" id="closeGoat" aria-label="Close assistant"></button>
+    <button class="close-btn" id="closeGoat" aria-label="Close assistant">×</button>
   </div>
   <div class="goat-chat" id="goatChat"></div>
   <input id="goatInput" class="goat-input" type="text" placeholder="Ask a question..." />
 </div>
 
-<script src="js/assistant.js/assistant.js"></script>
-<script src="js/accessibility.js/accessibility.js"></script>
+<script src="js/assistant.js"></script>
+<script src="js/accessibility.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const clearDataBtn = document.getElementById('clearDataBtn');
+  if (clearDataBtn) {
+    clearDataBtn.addEventListener('click', function() {
+      if (confirm('Are you sure you want to delete all reviews and suggestions? This cannot be undone.')) {
+        localStorage.removeItem('alphaUnitReviews');
+        localStorage.removeItem('alphaUnitSuggestions');
+        loadReviews();
+        showLastSuggestion();
+        alert('All reviews and suggestions have been cleared.');
+      }
+    });
+  }
+
+  const suggestionForm = document.getElementById('suggestionForm');
+  const suggestionName = document.getElementById('suggestionName');
+  const suggestionText = document.getElementById('suggestionText');
+  const suggestionMessage = document.getElementById('suggestionMessage');
+  function clearSuggestionMessage() {
+    suggestionMessage.textContent = '';
+  }
+  function showLastSuggestion() {
+    let suggestions = [];
+    try {
+      suggestions = JSON.parse(localStorage.getItem('alphaUnitSuggestions') || '[]');
+      suggestions = suggestions.filter(s => s && typeof s === 'object' && s.name && s.suggestion && s.time);
+      localStorage.setItem('alphaUnitSuggestions', JSON.stringify(suggestions));
+    } catch (e) {
+      suggestions = [];
+      localStorage.setItem('alphaUnitSuggestions', '[]');
+      console.error('Suggestion section error:', e);
+    }
+    const lastOne = suggestions.slice(0, 1);
+    const suggestionDisplay = document.getElementById('lastSuggestionDisplay');
+    if (suggestionDisplay) {
+      suggestionDisplay.innerHTML = lastOne.length ? lastOne.map(s => `<div class='suggestion-card' style='background:#222;padding:10px 15px;margin-bottom:10px;border-radius:6px;'><strong>${s.name}</strong> <span style='color:var(--muted);font-size:12px;'>(${s.time})</span><br>${s.suggestion}</div>`).join('') : '<span style="color:var(--muted)">No suggestions yet.</span>';
+    }
+  }
+  if (suggestionForm) {
+    suggestionForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nameVal = suggestionName.value.trim() || 'Anonymous';
+      const suggestionVal = suggestionText.value.trim();
+      if (nameVal.length < 2) {
+        suggestionMessage.textContent = 'Please enter your name or nickname (at least 2 characters).';
+        suggestionMessage.style.color = 'red';
+        return;
+      }
+      if (suggestionVal.length < 3) {
+        suggestionMessage.textContent = 'Please enter at least 3 characters for your suggestion.';
+        suggestionMessage.style.color = 'red';
+        return;
+      }
+      // Swearing and legal word filter
+      const bannedWords = [
+        'fuck','shit','bitch','asshole','bastard','dick','cunt','piss','cock','pussy','fag','slut','whore','damn','crap','bollocks','bugger','arse','wank','twat',
+        'lawsuit','attorney','lawyer','legal','court','sue','suing','litigation','prosecutor','defendant','plaintiff','judge','jury','verdict','settlement','contract','copyright','trademark','patent','infringe','infringement','illegal','unlawful','indict','indictment','arrest','warrant','subpoena','testify','testimony','evidence','plea','guilty','not guilty','sentence','sentencing','convict','conviction','acquit','acquittal','appeal','appeals','probation','parole','bail','bond','felony','misdemeanor','crime','criminal','civil','statute','regulation','regulatory','compliance','fine','penalty','damages','liability','liable','negligence','negligent','malpractice','disbar','disbarment','bar association','bar exam','bar license','bar member','pro bono','retainer','affidavit','deposition','motion','brief','hearing','injunction','restraining order','cease and desist','discovery','subpoena','witness','testify','testimony','oath','perjury','contempt','contempt of court','allegation','allege','defense','prosecution','plead','pleading','arraignment','sentence','sentencing','parole','probation','bail','bond','warrant','arrest','detain','detention','incarcerate','incarceration','prison','jail','cell','inmate','parolee','probationer','parole officer','probation officer','warden','warden','bailiff','sheriff','marshal','constable','police','officer','detective','investigator','agent','fbi','cia','dea','atf','us marshal','secret service','homeland security','ice','border patrol','customs','immigration','visa','passport','deport','deportation','extradite','extradition','asylum','refugee','sanctuary','witness protection','plea bargain','plea deal','plea agreement','plea hearing','plea offer','plea negotiation','plea withdrawal','plea change','plea entry','plea allocution','plea colloquy','plea canvass','plea inquiry','plea statement','plea transcript','plea record','plea form','plea petition','plea application','plea motion','plea order','plea judgment','plea sentence','plea disposition','plea agreement','plea deal','plea offer','plea negotiation','plea withdrawal','plea change','plea entry','plea allocution','plea colloquy','plea canvass','plea inquiry','plea statement','plea transcript','plea record','plea form','plea petition','plea application','plea motion','plea order','plea judgment','plea sentence','plea disposition'
+      ];
+      const lowerVal = suggestionVal.toLowerCase();
+      for (let word of bannedWords) {
+        if (lowerVal.includes(word)) {
+          suggestionMessage.textContent = 'Your suggestion contains inappropriate or restricted words. Please revise and try again.';
+          suggestionMessage.style.color = 'red';
+          return;
+        }
+      }
+      const now = new Date();
+      const timeString = now.toLocaleString(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+      let suggestions = JSON.parse(localStorage.getItem('alphaUnitSuggestions') || '[]');
+      suggestions.unshift({ name: nameVal, suggestion: suggestionVal, time: timeString });
+      if (suggestions.length > 20) suggestions = suggestions.slice(0, 20);
+      localStorage.setItem('alphaUnitSuggestions', JSON.stringify(suggestions));
+      suggestionName.value = '';
+      suggestionText.value = '';
+      suggestionMessage.textContent = 'Thank you for your suggestion!';
+      suggestionMessage.style.color = '#007e33';
+      showLastSuggestion();
+      setTimeout(clearSuggestionMessage, 4000);
+    });
+    showLastSuggestion();
+  }
+
+  const reviewForm = document.getElementById('reviewForm');
+  const reviewInput = document.getElementById('reviewInput');
+  const reviewName = document.getElementById('reviewName');
+  const reviewsList = document.getElementById('reviewsList');
+  function loadReviews() {
+    let reviews = [];
+    try {
+      reviews = JSON.parse(localStorage.getItem('alphaUnitReviews') || '[]');
+      reviews = reviews.filter(r => r && typeof r === 'object' && r.name && r.text && r.time);
+      localStorage.setItem('alphaUnitReviews', JSON.stringify(reviews));
+    } catch (e) {
+      reviews = [];
+      localStorage.setItem('alphaUnitReviews', '[]');
+      console.error('Review section error:', e);
+    }
+    const lastThree = reviews.slice(0, 3);
+    reviewsList.innerHTML = lastThree.length ? lastThree.map(r => `<div class='review-card' style='background:#1a2a2f;padding:10px 15px;margin-bottom:10px;border-radius:6px;'><strong>${r.name}</strong> <span style='color:var(--muted);font-size:12px;'>(${r.time})</span><br>${r.text}</div>`).join('') : '<span style="color:var(--muted)">No reviews yet.</span>';
+  }
+  if (reviewForm) {
+    reviewForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const val = reviewInput.value.trim();
+      const nameVal = reviewName.value.trim() || 'Anonymous';
+      if (nameVal.length < 2) {
+        alert('Please enter your name or nickname (at least 2 characters).');
+        return;
+      }
+      if (val.length < 3) {
+        alert('Please enter at least 3 characters for your review.');
+        return;
+      }
+      const bannedWords = [
+        'fuck','shit','bitch','asshole','bastard','dick','cunt','piss','cock','pussy','fag','slut','whore','damn','crap','bollocks','bugger','arse','wank','twat',
+        'lawsuit','attorney','lawyer','legal','court','sue','suing','litigation','prosecutor','defendant','plaintiff','judge','jury','verdict','settlement','contract','copyright','trademark','patent','infringe','infringement','illegal','unlawful','indict','indictment','arrest','warrant','subpoena','testify','testimony','evidence','plea','guilty','not guilty','sentence','sentencing','convict','conviction','acquit','acquittal','appeal','appeals','probation','parole','bail','bond','felony','misdemeanor','crime','criminal','civil','statute','regulation','regulatory','compliance','fine','penalty','damages','liability','liable','negligence','negligent','malpractice','disbar','disbarment','bar association','bar exam','bar license','bar member','pro bono','retainer','affidavit','deposition','motion','brief','hearing','injunction','restraining order','cease and desist','discovery','subpoena','witness','testify','testimony','oath','perjury','contempt','contempt of court','allegation','allege','defense','prosecution','plead','pleading','arraignment','sentence','sentencing','parole','probation','bail','bond','warrant','arrest','detain','detention','incarcerate','incarceration','prison','jail','cell','inmate','parolee','probationer','parole officer','probation officer','warden','warden','bailiff','sheriff','marshal','constable','police','officer','detective','investigator','agent','fbi','cia','dea','atf','us marshal','secret service','homeland security','ice','border patrol','customs','immigration','visa','passport','deport','deportation','extradite','extradition','asylum','refugee','sanctuary','witness protection','plea bargain','plea deal','plea agreement','plea hearing','plea offer','plea negotiation','plea withdrawal','plea change','plea entry','plea allocution','plea colloquy','plea canvass','plea inquiry','plea statement','plea transcript','plea record','plea form','plea petition','plea application','plea motion','plea order','plea judgment','plea sentence','plea disposition','plea agreement','plea deal','plea offer','plea negotiation','plea withdrawal','plea change','plea entry','plea allocution','plea colloquy','plea canvass','plea inquiry','plea statement','plea transcript','plea record','plea form','plea petition','plea application','plea motion','plea order','plea judgment','plea sentence','plea disposition'
+      ];
+      const lowerVal = val.toLowerCase();
+      for (let word of bannedWords) {
+        if (lowerVal.includes(word)) {
+          alert('Your review contains inappropriate or restricted words. Please revise and try again.');
+          return;
+        }
+      }
+      const now = new Date();
+      const timeString = now.toLocaleString(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+      let reviews = JSON.parse(localStorage.getItem('alphaUnitReviews') || '[]');
+      reviews.unshift({ name: nameVal, text: val, time: timeString });
+      if (reviews.length > 20) reviews = reviews.slice(0, 20);
+      localStorage.setItem('alphaUnitReviews', JSON.stringify(reviews));
+      reviewInput.value = '';
+      reviewName.value = '';
+      loadReviews();
+    });
+    loadReviews();
+  }
+
+  var fab = document.getElementById('goatFab');
+  if (fab) {
+    fab.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        fab.click();
+      }
+    });
+  }
+</script>
+  <script src="js/recentcomments.js"></script>
 </body>
 </html>
-
-
-
-
-
-
